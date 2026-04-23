@@ -71,8 +71,7 @@
               "RelativeToolTip": "UpdateQuestion.xaml.cs",
               "ViewState": "AgIAAB0AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-22T07:39:32.6Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-22T07:39:32.6Z"
             },
             {
               "$type": "Document",
@@ -83,8 +82,7 @@
               "ToolTip": "C:\\Users\\Utente\\source\\repos\\QuizMaker\\QuizMakerUI\\UpdateQuestion.xaml",
               "RelativeToolTip": "UpdateQuestion.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-04-22T07:39:31.577Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-22T07:39:31.577Z"
             },
             {
               "$type": "Document",
@@ -94,7 +92,7 @@
               "RelativeDocumentMoniker": "QuizDetails.xaml.cs",
               "ToolTip": "C:\\Users\\Utente\\source\\repos\\QuizMaker\\QuizMakerUI\\QuizDetails.xaml.cs",
               "RelativeToolTip": "QuizDetails.xaml.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAgwDwAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAAAgwDMAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-22T07:35:45.216Z",
               "EditorCaption": ""
@@ -108,8 +106,7 @@
               "ToolTip": "C:\\Users\\Utente\\source\\repos\\QuizMaker\\QuizMakerUI\\QuizDetails.xaml",
               "RelativeToolTip": "QuizDetails.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-04-22T07:35:13.759Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-22T07:35:13.759Z"
             },
             {
               "$type": "Document",
@@ -121,8 +118,7 @@
               "RelativeToolTip": "QuizList.xaml.cs",
               "ViewState": "AgIAACIAAAAAAAAAAAAgwFMAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-22T07:32:36.055Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-22T07:32:36.055Z"
             },
             {
               "$type": "Document",
@@ -133,8 +129,7 @@
               "ToolTip": "C:\\Users\\Utente\\source\\repos\\QuizMaker\\QuizMakerUI\\QuizList.xaml",
               "RelativeToolTip": "QuizList.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-04-21T09:46:42.193Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-21T09:46:42.193Z"
             },
             {
               "$type": "Document",
@@ -229,8 +224,7 @@
               "ToolTip": "C:\\Users\\Utente\\source\\repos\\QuizMaker\\QuizMakerUI\\App.xaml",
               "RelativeToolTip": "App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-03-17T14:29:09.701Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-17T14:29:09.701Z"
             }
           ]
         }
