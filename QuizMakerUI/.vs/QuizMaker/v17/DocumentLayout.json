@@ -1,12 +1,36 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerUI\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{565E89F2-74B9-45E6-996B-5F7C39FE523E}|QuizMakerUI.csproj|c:\\users\\utente\\desktop\\quizmaker\\quizmakerui\\quizdetails.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{565E89F2-74B9-45E6-996B-5F7C39FE523E}|QuizMakerUI.csproj|solutionrelative:quizdetails.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "QuizDetails.xaml",
+              "DocumentMoniker": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerUI\\QuizDetails.xaml",
+              "RelativeDocumentMoniker": "QuizDetails.xaml",
+              "ToolTip": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerUI\\QuizDetails.xaml",
+              "RelativeToolTip": "QuizDetails.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-23T10:22:11.993Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
