@@ -1,0 +1,63 @@
+﻿<Page x:Class="QuizMakerUI.CreateQuestion"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:QuizMakerUI"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="CreateQuestion"
+      Background="White">
+
+    <Grid Width="800" Height="450">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Text="Create Question" FontSize="30" 
+                   HorizontalAlignment="Center" 
+                   Grid.ColumnSpan="4"/>
+        <TextBlock Grid.Row="1" Text="Question:" 
+                   VerticalAlignment="Center"
+                   FontSize="15" Margin="30,0,0,0"
+                   x:Name="QuestionLabel"
+                   FontWeight="Bold"/>
+        <TextBox Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"
+                 Margin="10,30,10,30" x:Name="QuestionText"/>
+
+        <ScrollViewer VerticalScrollBarVisibility="Auto"
+                      Grid.Row="2" Grid.Column="2">
+            <StackPanel x:Name="Panel"/>
+        </ScrollViewer>
+        <StackPanel Grid.Row="2" Grid.Column="1">
+            <TextBox x:Name="TxtPath" Width="120" Margin="5"/>
+            <Button Content="Choose Image" x:Name="ButtonChooseImage"
+                    Click="ButtonChooseImage_Click"
+                    Width="100" Margin="5"/>
+            <Image x:Name="Image" Width="120" Margin="5"/>
+        </StackPanel>
+
+        <Button Grid.Row="3" Grid.Column="2" Content="Cancel" 
+                HorizontalAlignment="Center" 
+                Margin="100,20,0,20" FontSize="20" Padding="5" 
+                x:Name="ButtonCancel" Click="ButtonCancel_Click"/>
+        <Button Grid.Row="3" Grid.Column="2" Content="Save" 
+                HorizontalAlignment="Center" 
+                Margin="300,20,0,20" FontSize="20" Padding="5" 
+                x:Name="ButtonSave" Click="ButtonSave_Click"
+                Visibility="Collapsed"/>
+        <Button Grid.Row="3" Grid.Column="3" Content="Next" 
+                HorizontalAlignment="Center" 
+                Margin="0,20,0,20" FontSize="20" Padding="5" 
+                x:Name="ButtonNext" Click="ButtonNext_Click"/>
+    </Grid>
+</Page>
