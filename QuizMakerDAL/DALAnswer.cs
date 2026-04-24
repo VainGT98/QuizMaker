@@ -155,13 +155,13 @@ namespace QuizMakerDAL
                 if (connection == null)
                 {
                     cmd = new SqlCommand(
-                    "SELECT * FROM Answer WHERE QuestionID=@q",
+                    "SELECT * FROM Answer WHERE QuestionID=@q ORDER BY OrderNumber",
                     SqlConn, transaction);
                 }
                 else
                 {
                     cmd = new SqlCommand(
-                    "SELECT * FROM Answer WHERE QuestionID=@q",
+                    "SELECT * FROM Answer WHERE QuestionID=@q ORDER BY OrderNumber",
                     connection, transaction);
                 }
                 using (cmd)
