@@ -19,8 +19,8 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="3*"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="2*"/>
         </Grid.ColumnDefinitions>
 
         <TextBlock Text="Update Question" FontSize="30" 
@@ -28,7 +28,7 @@
                    Grid.ColumnSpan="4"/>
         <TextBlock Grid.Row="1" Text="Question:" 
                    VerticalAlignment="Center"
-                   FontSize="15" Margin="30,0,0,0"
+                   FontSize="15" Margin="20,0,0,0"
                    x:Name="QuestionLabel"
                    FontWeight="Bold"/>
         <TextBox Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"
@@ -39,11 +39,11 @@
             <StackPanel x:Name="Panel"/>
         </ScrollViewer>
         <StackPanel Grid.Row="2" Grid.Column="1">
-            <TextBox x:Name="TxtPath" Width="120" Margin="5"/>
+            <TextBox x:Name="TxtPath" Width="90" Margin="5"/>
             <Button x:Name="ButtonChooseImage" Content="Choose Image" 
                     Click="ButtonChooseImage_Click"
-                    Width="100" Margin="5"/>
-            <Image x:Name="Image" Width="120" Margin="5"/>
+                    Width="90" Margin="5"/>
+            <Image x:Name="Image" Width="90" Margin="5"/>
         </StackPanel>
 
         <Button Grid.Row="3" Grid.Column="2" Content="Cancel"  
@@ -53,9 +53,13 @@
                 HorizontalAlignment="Center" 
                 Margin="300,20,0,20" FontSize="20" Padding="5" 
                 x:Name="ButtonSave" Click="ButtonSave_Click"/>
+        <Button Grid.Column="3" Grid.Row="3" Content="Back" 
+                HorizontalAlignment="Left" 
+                Margin="20,20,0,20" FontSize="20" Padding="5" 
+                x:Name="ButtonBack" Click= "ButtonBack_Click"/>
         <Button Grid.Row="3" Grid.Column="3" Content="Next" 
                 HorizontalAlignment="Center" 
-                Margin="0,20,0,20" FontSize="20" Padding="5" 
+                Margin="40,20,0,20" FontSize="20" Padding="5" 
                 x:Name="ButtonNext" Click="ButtonNext_Click"/>
     </Grid>
 </Page>

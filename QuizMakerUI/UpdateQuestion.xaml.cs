@@ -229,5 +229,11 @@ namespace QuizMakerUI
         {
             NavigationService.Navigate(new QuizList(_user));
         }
+
+        private void ButtonBack_Click(object sender, RoutedEventArgs e)
+        {
+            //_questionCount--;
+            //NavigationService.GoBack();
+        }
     }
 }
