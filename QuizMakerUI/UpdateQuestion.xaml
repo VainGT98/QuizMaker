@@ -47,19 +47,15 @@
         </StackPanel>
 
         <Button Grid.Row="3" Grid.Column="2" Content="Cancel"  
-                Margin="200,20,100,20" FontSize="20" Padding="5" 
-                x:Name="ButtonCancel" Click="ButtonCancel_Click"/>
-        <Button Grid.Row="3" Grid.Column="2" Content="Save" 
-                HorizontalAlignment="Center" 
                 Margin="300,20,0,20" FontSize="20" Padding="5" 
+                x:Name="ButtonCancel" Click="ButtonCancel_Click"/>
+        <Button Grid.Row="3" Grid.Column="3" Content="Save" 
+                HorizontalAlignment="Center" 
+                Margin="40,20,0,20" FontSize="20" Padding="5" 
                 x:Name="ButtonSave" Click="ButtonSave_Click"/>
         <Button Grid.Column="3" Grid.Row="3" Content="Back" 
                 HorizontalAlignment="Left" 
                 Margin="20,20,0,20" FontSize="20" Padding="5" 
                 x:Name="ButtonBack" Click= "ButtonBack_Click"/>
-        <Button Grid.Row="3" Grid.Column="3" Content="Next" 
-                HorizontalAlignment="Center" 
-                Margin="40,20,0,20" FontSize="20" Padding="5" 
-                x:Name="ButtonNext" Click="ButtonNext_Click"/>
     </Grid>
 </Page>

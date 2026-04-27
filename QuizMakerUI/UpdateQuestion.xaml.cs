@@ -24,37 +24,27 @@ namespace QuizMakerUI
     /// </summary>
     public partial class UpdateQuestion : Page
     {
-        int _questionNumber;
-        int _questionCount;
         QuizModel _quiz;
         UserModel _user;
         int _questionID;
         int _answerID;
-        public UpdateQuestion(QuizModel quiz, int questionNumber, int questionCount, UserModel user)
+        QuestionModel _question;
+        public UpdateQuestion(QuizModel quiz, QuestionModel question, UserModel user)
         {
             InitializeComponent();
             _quiz = quiz;
-
-            if (questionNumber == 1)
-            {
-                ButtonNext.Visibility = Visibility.Collapsed;
-            }
-            questionNumber--;
-            _questionNumber = questionNumber;
-            _questionCount = questionCount;
+            _question = question;
             _user = user;
-            _questionID = quiz.QuestionsList[_questionCount].QuestionID.Value;
+            _questionID = question.QuestionID.Value;
 
-            QuestionLabel.Text = "Question " + quiz.QuestionsList[_questionCount].OrderNumber;
-            QuestionText.Text = quiz.QuestionsList[_questionCount].Text;
-            if (!string.IsNullOrWhiteSpace(quiz.QuestionsList[_questionCount].ImagePath))
+            QuestionLabel.Text = "Question " + question.OrderNumber;
+            QuestionText.Text = question.Text;
+            if (!string.IsNullOrWhiteSpace(question.ImagePath))
             {
-                TxtPath.Text = quiz.QuestionsList[_questionCount].ImagePath;
-                //Image.Source = new BitmapImage(new Uri(quiz.QuestionsList[_questionCount].ImagePath));
+                TxtPath.Text = question.ImagePath;
             }
-            Image.Source = quiz.QuestionsList[_questionCount].Image != null ? new BLLImage().ByteArrayToImage(quiz.QuestionsList[_questionCount].Image) : null;
-
-            foreach (AnswerModel answer in quiz.QuestionsList[_questionCount].AnswersList)
+            Image.Source = question.Image != null ? new BLLImage().ByteArrayToImage(question.Image) : null;
+            foreach (AnswerModel answer in question.AnswersList)
             {
                 _answerID = answer.AnswerID.Value;
                 TextBlock textBlock = new TextBlock
@@ -131,7 +121,7 @@ namespace QuizMakerUI
                     QuestionID = _questionID,
                     Text = QuestionText.Text,
                     ImagePath = string.IsNullOrWhiteSpace(TxtPath.Text) ? null : TxtPath.Text,
-                    OrderNumber = _questionCount + 1,
+                    OrderNumber = _question.OrderNumber,
                     Image = Image.Source != null ? new BLLImage().ImageToByteArray((BitmapSource)Image.Source) : null,
                     AnswersList = answers
                 });
@@ -139,68 +129,10 @@ namespace QuizMakerUI
                 BLLQuiz bLLQuiz = new BLLQuiz();
                 bLLQuiz.UpdateQuiz(_quiz);
 
-                MessageBox.Show("Quiz updated successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                MessageBox.Show("Question updated successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
 
-                NavigationService.Navigate(new QuizList(_user));
+                NavigationService.GoBack();
             }   
-        }
-
-        private void ButtonNext_Click(object sender, RoutedEventArgs e)
-        {
-            if (string.IsNullOrWhiteSpace(QuestionText.Text))
-            {
-                MessageBox.Show("Please enter a question text.", "Validation Error", MessageBoxButton.OK, MessageBoxImage.Warning);
-                return;
-            }
-            else if (Panel.Children.OfType<TextBox>().Any(tb => string.IsNullOrWhiteSpace(tb.Text)))
-            {
-                MessageBox.Show("Please fill in all answer fields.", "Validation Error", MessageBoxButton.OK, MessageBoxImage.Warning);
-                return;
-            }
-            else if (!Panel.Children.OfType<RadioButton>().Any(rb => rb.IsChecked == true))
-            {
-                MessageBox.Show("Please select the correct answer.", "Validation Error", MessageBoxButton.OK, MessageBoxImage.Warning);
-                return;
-            }
-            else if (Panel.Children.OfType<RadioButton>().Count(rb => rb.IsChecked == true) > 1)
-            {
-                MessageBox.Show("Please select only one correct answer.", "Validation Error", MessageBoxButton.OK, MessageBoxImage.Warning);
-                return;
-            }
-            else
-            {
-                List<AnswerModel> answers = new List<AnswerModel>();
-
-                int order = 1;
-
-                foreach (var child in Panel.Children)
-                {
-                    if (child is RadioButton rb)
-                    {
-                        answers.Add(new AnswerModel
-                        {
-                            AnswerID = ((dynamic)rb.Tag)._answerID, // 🔥 recupera l'ID della risposta
-                            Text = ((dynamic)rb.Tag).textBox.Text, // 🔥 recupera il testo dal TextBox
-                            IsCorrect = rb.IsChecked == true,
-                            OrderNumber = order++
-                        });
-                    }
-                }
-
-                _quiz.QuestionsList.Add(new QuestionModel
-                {
-                    QuestionID = _questionID,
-                    Text = QuestionText.Text,
-                    ImagePath = string.IsNullOrWhiteSpace(TxtPath.Text) ? null : TxtPath.Text,
-                    OrderNumber = _questionCount + 1,
-                    Image = Image.Source != null ? new BLLImage().ImageToByteArray((BitmapSource)Image.Source) : null,
-                    AnswersList = answers
-                });
-
-
-                _questionCount++;
-                NavigationService.Navigate(new UpdateQuestion(_quiz, _questionNumber, _questionCount, _user));
-            } 
         }
 
         private void ButtonChooseImage_Click(object sender, RoutedEventArgs e)
@@ -232,8 +164,7 @@ namespace QuizMakerUI
 
         private void ButtonBack_Click(object sender, RoutedEventArgs e)
         {
-            //_questionCount--;
-            //NavigationService.GoBack();
+            NavigationService.GoBack();
         }
     }
 }

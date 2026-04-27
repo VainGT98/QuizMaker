@@ -35,25 +35,27 @@ namespace QuizMakerUI
             _user = user;
             
             QuizTitle.Text = quiz.Title;
-            
-            Next.Tag = quiz;
-            ButtonSave.Tag = quiz;
-        }
 
-        private void Next_Click(object sender, RoutedEventArgs e)
-        {
-            if (string.IsNullOrWhiteSpace(QuizTitle.Text))
+            foreach (QuestionModel question in quiz.QuestionsList)
             {
-                MessageBox.Show("Please enter a title for the quiz.", "Validation Error", MessageBoxButton.OK, MessageBoxImage.Warning);
-                return;
+                Button button = new Button()
+                {
+                    Content = $"Question {question.OrderNumber}",
+                    Margin = new Thickness(5),
+                    Tag = question,
+                };
+                
+                button.Click += (s, e) =>
+                {
+                    var btn = s as Button;
+                    var q = btn.Tag as QuestionModel;
+                    NavigationService.Navigate(new UpdateQuestion(quiz, question, _user));
+                };
+
+                QuestionsPanel.Children.Add(button);
             }
-            else
-            {
-                var button = sender as Button;
-                var quiz = button.Tag as QuizModel;
-                quiz.Title = QuizTitle.Text;
-                NavigationService.Navigate(new UpdateQuestion(quiz, _questionNumber, _questionCount, _user));
-            }
+
+            ButtonSave.Tag = quiz;
         }
 
         private void Cancel_Click(object sender, RoutedEventArgs e)
