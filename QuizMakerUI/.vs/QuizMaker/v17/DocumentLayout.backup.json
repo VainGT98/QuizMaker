@@ -46,7 +46,7 @@
               "RelativeDocumentMoniker": "QuizDetails.xaml.cs",
               "ToolTip": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerUI\\QuizDetails.xaml.cs",
               "RelativeToolTip": "QuizDetails.xaml.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAwwDIAAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAQwH0AAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-27T10:02:19.018Z",
               "EditorCaption": ""
@@ -60,8 +60,7 @@
               "ToolTip": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerUI\\QuizDetails.xaml",
               "RelativeToolTip": "QuizDetails.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-04-27T10:02:15.168Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-27T10:02:15.168Z"
             },
             {
               "$type": "Document",
@@ -73,8 +72,7 @@
               "RelativeToolTip": "..\\QuizMakerBLL\\BLLAnswer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-24T09:15:30.273Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-24T09:15:30.273Z"
             },
             {
               "$type": "Document",
@@ -86,8 +84,7 @@
               "RelativeToolTip": "..\\QuizMakerBLL\\BLLQuestion.cs",
               "ViewState": "AgIAAGsAAAAAAAAAAAAgwHwAAABlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-24T09:15:28.254Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-24T09:15:28.254Z"
             },
             {
               "$type": "Document",
@@ -99,8 +96,7 @@
               "RelativeToolTip": "..\\QuizMakerBLL\\BLLQuiz.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-24T09:15:26.857Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-24T09:15:26.857Z"
             },
             {
               "$type": "Document",
@@ -112,8 +108,7 @@
               "RelativeToolTip": "..\\QuizMakerDAL\\DALAnswer.cs",
               "ViewState": "AgIAAJEAAAAAAAAAAAAcwKMAAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-24T07:44:22.171Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-24T07:44:22.171Z"
             },
             {
               "$type": "Document",
@@ -125,8 +120,7 @@
               "RelativeToolTip": "..\\QuizMakerDAL\\DALQuestion.cs",
               "ViewState": "AgIAAPcAAAAAAAAAAAAqwBgBAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-24T07:41:17.749Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-24T07:41:17.749Z"
             },
             {
               "$type": "Document",

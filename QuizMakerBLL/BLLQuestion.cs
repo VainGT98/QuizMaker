@@ -116,18 +116,5 @@ namespace QuizMakerBLL
                 throw;
             }
         }
-
-        public void UpdateQuestionOrder(int questionID, int newOrderNumber, SqlConnection connection = null, SqlTransaction transaction = null)
-        {
-            try
-            {
-                DALQuestion dalQuestion = new DALQuestion();
-                dalQuestion.UpdateQuestionOrder(questionID, newOrderNumber, connection, transaction);
-            }
-            catch
-            {
-                throw;
-            }
-        }
     }
 }

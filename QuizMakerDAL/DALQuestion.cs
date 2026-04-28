@@ -244,39 +244,5 @@ namespace QuizMakerDAL
                 throw;
             }
         }
-
-        public void UpdateQuestionOrder(int questionID, int newOrderNumber, SqlConnection connection = null, SqlTransaction transaction = null)
-        {
-            try
-            {
-                SqlCommand cmd;
-                if (connection == null)
-                {
-                    cmd = new SqlCommand(
-                        "UPDATE Question SET OrderNumber = @on WHERE ID = @id",
-                        SqlConn,
-                        transaction
-                    );
-                }
-                else
-                {
-                    cmd = new SqlCommand(
-                        "UPDATE Question SET OrderNumber = @on WHERE ID = @id",
-                        connection,
-                        transaction
-                    );
-                }
-                using (cmd)
-                {
-                    cmd.Parameters.AddWithValue("@on", newOrderNumber);
-                    cmd.Parameters.AddWithValue("@id", questionID);
-                    cmd.ExecuteNonQuery();
-                }
-            }
-            catch
-            {
-                throw;
-            }
-        }
     }
 }
