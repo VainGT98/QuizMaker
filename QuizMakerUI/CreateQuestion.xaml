@@ -53,8 +53,7 @@
         <Button Grid.Row="3" Grid.Column="2" Content="Save" 
                 HorizontalAlignment="Center" 
                 Margin="300,20,0,20" FontSize="20" Padding="5" 
-                x:Name="ButtonSave" Click="ButtonSave_Click"
-                Visibility="Collapsed"/>
+                x:Name="ButtonSave" Click="ButtonSave_Click"/>
         <Button Grid.Row="3" Grid.Column="3" Content="Next" 
                 HorizontalAlignment="Center" 
                 Margin="0,20,0,20" FontSize="20" Padding="5" 

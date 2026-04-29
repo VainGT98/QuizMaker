@@ -3,7 +3,6 @@ using QuizMakerBLL;
 using QuizMakerModel;
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,35 +15,25 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace QuizMakerUI
 {
     /// <summary>
-    /// Logica di interazione per CreateQuestion.xaml
+    /// Logica di interazione per AddQuestion.xaml
     /// </summary>
-    public partial class CreateQuestion : Page
+    public partial class AddQuestion : Page
     {
         private QuizModel _quiz;
-        private int _questionNumber;
-        private int _answerNumber;
         private UserModel _user;
-        public CreateQuestion(QuizModel quiz, int questionNumber ,int answerNumber, UserModel user)
+
+        public AddQuestion(QuizModel quiz, UserModel user)
         {
             InitializeComponent();
             _quiz = quiz;
-            _questionNumber = questionNumber;
-            _answerNumber = answerNumber;
             _user = user;
-            if (quiz.QuestionNumber == 1)
-            {
-                ButtonNext.Visibility = Visibility.Collapsed;
-            }
-            quiz.QuestionNumber--;
+            int answerCount = quiz.QuestionsList.Count > 0 ? quiz.QuestionsList.Max(q => q.AnswersList.Count) : 0;
 
-            QuestionLabel.Text = "Question " + _questionNumber;
-
-            for (int i = 1; i <= answerNumber ; i++)
+            for (int i = 1; i <= answerCount; i++)
             {
                 TextBlock textBlock = new TextBlock
                 {
@@ -57,76 +46,22 @@ namespace QuizMakerUI
                 TextBox textBox = new TextBox
                 {
                     Name = "Answer" + i,
-                    Height = 30,
                     Margin = new Thickness(0, 0, 0, 10)
                 };
                 Panel.Children.Add(textBox);
                 RadioButton radioButton = new RadioButton
                 {
                     Content = "Correct",
-                    GroupName = "AnswersGroup", // 🔥 fondamentale
+                    Margin = new Thickness(0, 0, 0, 20),
                     Tag = textBox,
-                    Margin = new Thickness(0, 0, 0, 15)
                 };
                 Panel.Children.Add(radioButton);
             }
         }
 
-        private void ButtonNext_Click(object sender, RoutedEventArgs e)
+        private void ButtonBack_Click(object sender, RoutedEventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(QuestionText.Text))
-            {
-                MessageBox.Show("Please enter a question text.", "Validation Error", MessageBoxButton.OK, MessageBoxImage.Warning);
-                return;
-            }
-            else if (Panel.Children.OfType<TextBox>().Any(tb => string.IsNullOrWhiteSpace(tb.Text)))
-            {
-                MessageBox.Show("Please fill in all answer fields.", "Validation Error", MessageBoxButton.OK, MessageBoxImage.Warning);
-                return;
-            }
-            else if (!Panel.Children.OfType<RadioButton>().Any(rb => rb.IsChecked == true))
-            {
-                MessageBox.Show("Please select the correct answer.", "Validation Error", MessageBoxButton.OK, MessageBoxImage.Warning);
-                return;
-            }
-            else if (Panel.Children.OfType<RadioButton>().Count(rb => rb.IsChecked == true) > 1)
-            {
-                MessageBox.Show("Please select only one correct answer.", "Validation Error", MessageBoxButton.OK, MessageBoxImage.Warning);
-                return;
-            }
-            else
-            {
-                List<AnswerModel> answers = new List<AnswerModel>();
-
-                int order = 1;
-
-                foreach (var child in Panel.Children)
-                {
-                    if (child is RadioButton rb)
-                    {
-                        TextBox txt = rb.Tag as TextBox;
-
-                        answers.Add(new AnswerModel
-                        {
-                            Text = txt.Text,
-                            IsCorrect = rb.IsChecked == true,
-                            OrderNumber = order++
-                        });
-                    }
-                }
-
-                _quiz.QuestionsList.Add(new QuestionModel
-                {
-                    Text = QuestionText.Text,
-                    ImagePath = string.IsNullOrWhiteSpace(TxtPath.Text) ? null : TxtPath.Text,
-                    OrderNumber = _questionNumber,
-                    Image = Image.Source != null ? new BLLImage().ImageToByteArray((BitmapImage)Image.Source) : null,
-                    AnswersList = answers
-
-                });
-                _questionNumber++;
-                NavigationService.Navigate(new CreateQuestion(_quiz, _questionNumber, _answerNumber, _user));
-            }
+            NavigationService.GoBack();
         }
 
         private void ButtonSave_Click(object sender, RoutedEventArgs e)
@@ -161,11 +96,9 @@ namespace QuizMakerUI
                 {
                     if (child is RadioButton rb)
                     {
-                        TextBox txt = rb.Tag as TextBox;
-
                         answers.Add(new AnswerModel
                         {
-                            Text = txt.Text,
+                            Text = ((TextBox)rb.Tag).Text,
                             IsCorrect = rb.IsChecked == true,
                             OrderNumber = order++
                         });
@@ -176,16 +109,22 @@ namespace QuizMakerUI
                 {
                     Text = QuestionText.Text,
                     ImagePath = string.IsNullOrWhiteSpace(TxtPath.Text) ? null : TxtPath.Text,
-                    OrderNumber = _questionNumber,
-                    Image = Image.Source != null ? new BLLImage().ImageToByteArray((BitmapImage)Image.Source) : null,
+                    OrderNumber = _quiz.QuestionsList.Count + 1,
+                    Image = Image.Source != null ? new BLLImage().ImageToByteArray((BitmapSource)Image.Source) : null,
                     AnswersList = answers
                 });
 
                 BLLQuiz bLLQuiz = new BLLQuiz();
-                bLLQuiz.InsertQuiz(_quiz);
+                bLLQuiz.UpdateQuiz(_quiz);
 
-                NavigationService.Navigate(new QuizList(_user));
-            } 
+                MessageBox.Show("Question added successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                NavigationService.Navigate(new UpdateQuiz(_quiz, _user));
+            }
+        }
+
+        private void ButtonCancel_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new QuizList(_user));
         }
 
         private void ButtonChooseImage_Click(object sender, RoutedEventArgs e)
@@ -193,7 +132,7 @@ namespace QuizMakerUI
             OpenFileDialog dlg = new OpenFileDialog();
             string path = Environment.CurrentDirectory;
             dlg.InitialDirectory = System.IO.Path.Combine(path, "Images");
-            dlg.Filter = "Image files (*.png;*.jpg)|*.png;*.jpg";
+            dlg.Filter = "Image files (*.jpg, *.jpeg, *.png) | *.jpg; *.jpeg; *.png";
 
             if (dlg.ShowDialog() == true)
             {
@@ -204,18 +143,10 @@ namespace QuizMakerUI
                 }
                 else
                 {
-                    // Salva il path nella TextBox
                     TxtPath.Text = dlg.FileName;
-
-                    // Mostra l'immagine
                     Image.Source = new BitmapImage(new Uri(dlg.FileName));
                 }
             }
-        }
-
-        private void ButtonCancel_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new QuizList(_user));
         }
     }
 }

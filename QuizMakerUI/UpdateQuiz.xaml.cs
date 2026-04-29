@@ -25,11 +25,12 @@ namespace QuizMakerUI
         int _questionNumber;
         int _questionCount = 0;
         UserModel _user;
+        QuizModel _quiz;
 
         public UpdateQuiz(QuizModel quiz, UserModel user)
         {
             InitializeComponent();
-
+            _quiz = quiz;
             BLLQuestion bLLQuestion = new BLLQuestion();
             _questionNumber = bLLQuestion.GetQuestionCountByQuizID(quiz.QuizID ?? 0);
             _user = user;
@@ -80,6 +81,11 @@ namespace QuizMakerUI
                 MessageBox.Show("Quiz updated successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
                 NavigationService.Navigate(new QuizList(_user));
             }
+        }
+
+        private void ButtonAddQuestion_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new AddQuestion(_quiz, _user));
         }
     }
 }
