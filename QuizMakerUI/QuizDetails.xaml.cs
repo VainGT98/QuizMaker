@@ -1,4 +1,5 @@
-﻿using QuizMakerBLL;
+﻿using Microsoft.Win32;
+using QuizMakerBLL;
 using QuizMakerModel;
 using System;
 using System.Collections.Generic;
@@ -85,7 +86,7 @@ namespace QuizMakerUI
 
         private void RefreshUI()
         {
-            MessageBox.Show("RefreshUI chiamato"); // <-- temporaneo
+            //MessageBox.Show("RefreshUI chiamato"); // <-- temporaneo
 
             QuizDetailsStackPanel.Children.Clear();
 
@@ -238,6 +239,22 @@ namespace QuizMakerUI
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new QuizList(_user));
+        }
+
+        private void ExportToPDFButton_Click(object sender, RoutedEventArgs e)
+        {
+            SaveFileDialog dialog = new SaveFileDialog
+            {
+                Filter = "PDF files (*.pdf)|*.pdf",
+                FileName = _quiz.Title
+            };
+
+            if (dialog.ShowDialog() == true)
+            {
+                BLLExportPDF bLLExportPDF = new BLLExportPDF();
+                bLLExportPDF.ExportQuizToPdf(_quiz, dialog.FileName);
+                MessageBox.Show("PDF esportato con successo!");
+            }
         }
     }
 }

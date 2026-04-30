@@ -30,6 +30,9 @@
         </ScrollViewer>
         <Button Content="Back" Grid.Row="2" Grid.Column="2" 
                 Margin="20" FontSize="20" x:Name="BackButton"
-                Click="BackButton_Click"/> 
+                Click="BackButton_Click"/>
+        <Button Content="Export To PDF" Grid.Row="2" Grid.Column="1"
+                Margin="20" FontSize="20" x:Name="ExportToPDFButton"
+                Click="ExportToPDFButton_Click"/>
     </Grid>
 </Page>

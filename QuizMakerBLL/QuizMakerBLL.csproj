@@ -8,6 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="iTextSharp" Version="5.5.13.5" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\QuizMakerDAL\QuizMakerDAL.csproj" />
     <ProjectReference Include="..\QuizMakerModel\QuizMakerModel.csproj" />
   </ItemGroup>
