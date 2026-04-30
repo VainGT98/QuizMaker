@@ -122,11 +122,6 @@ namespace QuizMakerUI
             }
         }
 
-        private void ButtonCancel_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new QuizList(_user));
-        }
-
         private void ButtonChooseImage_Click(object sender, RoutedEventArgs e)
         {
             OpenFileDialog dlg = new OpenFileDialog();
