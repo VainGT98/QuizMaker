@@ -238,7 +238,7 @@ namespace QuizMakerUI
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new QuizList(_user));
+            NavigationService.GoBack();
         }
 
         private void ExportToPDFButton_Click(object sender, RoutedEventArgs e)
