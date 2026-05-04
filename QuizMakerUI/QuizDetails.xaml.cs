@@ -253,7 +253,7 @@ namespace QuizMakerUI
             {
                 BLLExportPDF bLLExportPDF = new BLLExportPDF();
                 bLLExportPDF.ExportQuizToPdf(_quiz, dialog.FileName);
-                MessageBox.Show("PDF esportato con successo!");
+                MessageBox.Show("PDF exported successfully!");
             }
         }
 
@@ -269,7 +269,7 @@ namespace QuizMakerUI
             {
                 BLLExportCSV bLLExportCSV = new BLLExportCSV();
                 bLLExportCSV.ExportQuizToCsv(_quiz, dialog.FileName);
-                MessageBox.Show("CSV esportato con successo!");
+                MessageBox.Show("CSV exported successfully!");
             }
         }
     }
