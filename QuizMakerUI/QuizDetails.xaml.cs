@@ -256,5 +256,21 @@ namespace QuizMakerUI
                 MessageBox.Show("PDF esportato con successo!");
             }
         }
+
+        private void ExportToExcelButton_Click(object sender, RoutedEventArgs e)
+        {
+            SaveFileDialog dialog = new SaveFileDialog
+            {
+                Filter = "CSV files (*.csv)|*.csv",
+                FileName = _quiz.Title
+            };
+
+            if (dialog.ShowDialog() == true)
+            {
+                BLLExportCSV bLLExportCSV = new BLLExportCSV();
+                bLLExportCSV.ExportQuizToCsv(_quiz, dialog.FileName);
+                MessageBox.Show("CSV esportato con successo!");
+            }
+        }
     }
 }

@@ -9,7 +9,7 @@
       Title="QuizDetails"
       Background="White">
 
-    <Grid>
+    <Grid Width="800" Height="450">
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="4*"/>
@@ -32,7 +32,10 @@
                 Margin="20" FontSize="20" x:Name="BackButton"
                 Click="BackButton_Click"/>
         <Button Content="Export To PDF" Grid.Row="2" Grid.Column="1"
-                Margin="20" FontSize="20" x:Name="ExportToPDFButton"
+                Margin="300,20,20,20" FontSize="20" x:Name="ExportToPDFButton"
                 Click="ExportToPDFButton_Click"/>
+        <Button Content="Export To Excel" Grid.Row="2" Grid.Column="1"
+                Margin="50,20,250,20" FontSize="20" x:Name="ExportToExcelButton"
+                Click="ExportToExcelButton_Click"/>
     </Grid>
 </Page>

@@ -3,15 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerUI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{565E89F2-74B9-45E6-996B-5F7C39FE523E}|QuizMakerUI.csproj|c:\\users\\utente\\desktop\\quizmaker\\quizmakerui\\quizdetails.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{565E89F2-74B9-45E6-996B-5F7C39FE523E}|QuizMakerUI.csproj|solutionrelative:quizdetails.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{565E89F2-74B9-45E6-996B-5F7C39FE523E}|QuizMakerUI.csproj|c:\\users\\utente\\desktop\\quizmaker\\quizmakerui\\quizdetails.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{565E89F2-74B9-45E6-996B-5F7C39FE523E}|QuizMakerUI.csproj|solutionrelative:quizdetails.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C18B969E-6F98-4B41-A3D8-EC884E59802B}|..\\QuizMakerBLL\\QuizMakerBLL.csproj|c:\\users\\utente\\desktop\\quizmaker\\quizmakerbll\\bllexportpdf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C18B969E-6F98-4B41-A3D8-EC884E59802B}|..\\QuizMakerBLL\\QuizMakerBLL.csproj|c:\\users\\utente\\desktop\\quizmaker\\quizmakerbll\\bllexportcsv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{565E89F2-74B9-45E6-996B-5F7C39FE523E}|QuizMakerUI.csproj|c:\\users\\utente\\desktop\\quizmaker\\quizmakerui\\quizdetails.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{565E89F2-74B9-45E6-996B-5F7C39FE523E}|QuizMakerUI.csproj|solutionrelative:quizdetails.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{C18B969E-6F98-4B41-A3D8-EC884E59802B}|..\\QuizMakerBLL\\QuizMakerBLL.csproj|c:\\users\\utente\\desktop\\quizmaker\\quizmakerbll\\bllexportpdf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C18B969E-6F98-4B41-A3D8-EC884E59802B}|..\\QuizMakerBLL\\QuizMakerBLL.csproj|c:\\users\\utente\\desktop\\quizmaker\\quizmakerbll\\bllanswer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -39,11 +42,24 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "BLLExportCSV.cs",
+              "DocumentMoniker": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerBLL\\BLLExportCSV.cs",
+              "RelativeDocumentMoniker": "..\\QuizMakerBLL\\BLLExportCSV.cs",
+              "ToolTip": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerBLL\\BLLExportCSV.cs",
+              "RelativeToolTip": "..\\QuizMakerBLL\\BLLExportCSV.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAmwCQAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T07:34:46.985Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "BLLExportPDF.cs",
               "DocumentMoniker": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerBLL\\BLLExportPDF.cs",
               "RelativeDocumentMoniker": "..\\QuizMakerBLL\\BLLExportPDF.cs",
@@ -51,25 +67,24 @@
               "RelativeToolTip": "..\\QuizMakerBLL\\BLLExportPDF.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAgwC0AAABeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-30T08:45:29.068Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-30T08:45:29.068Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "QuizDetails.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerUI\\QuizDetails.xaml.cs",
               "RelativeDocumentMoniker": "QuizDetails.xaml.cs",
               "ToolTip": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerUI\\QuizDetails.xaml.cs",
               "RelativeToolTip": "QuizDetails.xaml.cs",
-              "ViewState": "AgIAAOIAAAAAAAAAAAAmwPAAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAPIAAAAAAAAAAAAuwA4BAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-30T08:39:41.286Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "QuizDetails.xaml",
               "DocumentMoniker": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerUI\\QuizDetails.xaml",
               "RelativeDocumentMoniker": "QuizDetails.xaml",
@@ -81,7 +96,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "BLLAnswer.cs",
               "DocumentMoniker": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerBLL\\BLLAnswer.cs",
               "RelativeDocumentMoniker": "..\\QuizMakerBLL\\BLLAnswer.cs",
@@ -89,12 +104,11 @@
               "RelativeToolTip": "..\\QuizMakerBLL\\BLLAnswer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-24T09:15:30.273Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-24T09:15:30.273Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "BLLQuestion.cs",
               "DocumentMoniker": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerBLL\\BLLQuestion.cs",
               "RelativeDocumentMoniker": "..\\QuizMakerBLL\\BLLQuestion.cs",
@@ -102,12 +116,11 @@
               "RelativeToolTip": "..\\QuizMakerBLL\\BLLQuestion.cs",
               "ViewState": "AgIAAGsAAAAAAAAAAAAgwHUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-24T09:15:28.254Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-24T09:15:28.254Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "BLLQuiz.cs",
               "DocumentMoniker": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerBLL\\BLLQuiz.cs",
               "RelativeDocumentMoniker": "..\\QuizMakerBLL\\BLLQuiz.cs",
@@ -115,12 +128,11 @@
               "RelativeToolTip": "..\\QuizMakerBLL\\BLLQuiz.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-24T09:15:26.857Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-24T09:15:26.857Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "DALAnswer.cs",
               "DocumentMoniker": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerDAL\\DALAnswer.cs",
               "RelativeDocumentMoniker": "..\\QuizMakerDAL\\DALAnswer.cs",
@@ -128,12 +140,11 @@
               "RelativeToolTip": "..\\QuizMakerDAL\\DALAnswer.cs",
               "ViewState": "AgIAAI4AAAAAAAAAAAAcwKMAAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-24T07:44:22.171Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-24T07:44:22.171Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "DALQuestion.cs",
               "DocumentMoniker": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerDAL\\DALQuestion.cs",
               "RelativeDocumentMoniker": "..\\QuizMakerDAL\\DALQuestion.cs",
@@ -141,12 +152,11 @@
               "RelativeToolTip": "..\\QuizMakerDAL\\DALQuestion.cs",
               "ViewState": "AgIAAOQAAAAAAAAAAIBJwPUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-24T07:41:17.749Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-24T07:41:17.749Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "DALQuiz.cs",
               "DocumentMoniker": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerDAL\\DALQuiz.cs",
               "RelativeDocumentMoniker": "..\\QuizMakerDAL\\DALQuiz.cs",
@@ -154,8 +164,7 @@
               "RelativeToolTip": "..\\QuizMakerDAL\\DALQuiz.cs",
               "ViewState": "AgIAAH4AAAAAAAAAAAAmwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-24T07:40:50.202Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-24T07:40:50.202Z"
             }
           ]
         }
