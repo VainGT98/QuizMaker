@@ -3,15 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerUI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{565E89F2-74B9-45E6-996B-5F7C39FE523E}|QuizMakerUI.csproj|c:\\users\\utente\\desktop\\quizmaker\\quizmakerui\\quizdetails.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{565E89F2-74B9-45E6-996B-5F7C39FE523E}|QuizMakerUI.csproj|solutionrelative:quizdetails.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{565E89F2-74B9-45E6-996B-5F7C39FE523E}|QuizMakerUI.csproj|c:\\users\\utente\\desktop\\quizmaker\\quizmakerui\\quizdetails.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{565E89F2-74B9-45E6-996B-5F7C39FE523E}|QuizMakerUI.csproj|solutionrelative:quizdetails.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C18B969E-6F98-4B41-A3D8-EC884E59802B}|..\\QuizMakerBLL\\QuizMakerBLL.csproj|c:\\users\\utente\\desktop\\quizmaker\\quizmakerbll\\bllexportcsv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{565E89F2-74B9-45E6-996B-5F7C39FE523E}|QuizMakerUI.csproj|c:\\users\\utente\\desktop\\quizmaker\\quizmakerui\\quizdetails.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{565E89F2-74B9-45E6-996B-5F7C39FE523E}|QuizMakerUI.csproj|solutionrelative:quizdetails.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C18B969E-6F98-4B41-A3D8-EC884E59802B}|..\\QuizMakerBLL\\QuizMakerBLL.csproj|c:\\users\\utente\\desktop\\quizmaker\\quizmakerbll\\bllexportpdf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -42,11 +42,11 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "BLLExportCSV.cs",
               "DocumentMoniker": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerBLL\\BLLExportCSV.cs",
               "RelativeDocumentMoniker": "..\\QuizMakerBLL\\BLLExportCSV.cs",
@@ -71,7 +71,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "QuizDetails.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerUI\\QuizDetails.xaml.cs",
               "RelativeDocumentMoniker": "QuizDetails.xaml.cs",
@@ -84,7 +84,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "QuizDetails.xaml",
               "DocumentMoniker": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerUI\\QuizDetails.xaml",
               "RelativeDocumentMoniker": "QuizDetails.xaml",
