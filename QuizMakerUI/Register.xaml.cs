@@ -45,6 +45,11 @@ namespace QuizMaker
 
                 if (reg)
                 {
+                    BLLUser bLLUser = new BLLUser();
+                    int userID = bLLUser.FindUserID(Username.Text);
+
+                    bLLUser.AssignRoleToUser(userID, 2); // Assegna ruolo "Utente" (ID 2)
+
                     MessageBox.Show("Registered");
 
                     MainWindow mainWindow = new MainWindow();
@@ -52,6 +57,10 @@ namespace QuizMaker
 
                     Window currentWindow = Window.GetWindow(this);
                     currentWindow?.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Registration failed. Please try again.");
                 }
             }
             catch (Exception ex)

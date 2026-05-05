@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800"
         ResizeMode="NoResize">
-    <Grid>
+    <Grid Height="450" Width="800">
         <Frame x:Name="MainFrame"
        NavigationUIVisibility="Hidden"/>
         <StackPanel Margin="250,50">
@@ -48,6 +48,11 @@
             <TextBlock />
             <Button Content="Register" FontSize="13" Margin="50,0"
                     Click="Button_Register"/>
+            <TextBlock />
+            <Button Content="Delete Account" FontSize="13" 
+                    Margin="100,0,100,0"
+                    x:Name="ButtonDeleteAccount"
+                    Click="ButtonDeleteAccount_Click"/>
         </StackPanel>
     </Grid>
 </Window>

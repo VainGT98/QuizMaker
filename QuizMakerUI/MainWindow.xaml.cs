@@ -91,5 +91,36 @@ namespace QuizMaker
                 PasswordText.Visibility = Visibility.Collapsed;
             }
         }
+
+        private void ButtonDeleteAccount_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                UserModel userModel = new UserModel();
+
+                userModel.Username = Username.Text;
+                userModel.Password = Password.Password;
+
+                BLLAuthenticate bLLAuthenticate = new BLLAuthenticate();
+
+                bool login = bLLAuthenticate.Login(userModel);
+
+                if (login)
+                {
+                    BLLUser bLLUser = new BLLUser();
+                    int userID = bLLUser.FindUserID(Username.Text);
+                    bLLUser.DeleteUser(userID);
+                    MessageBox.Show("Account deleted successfully");
+                }
+                else
+                {
+                    MessageBox.Show("Username or password incorrect");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

@@ -64,5 +64,88 @@ namespace QuizMakerDAL
                 throw;
             }
         }
+        public void DeleteUser(int userID, SqlConnection connection = null, SqlTransaction transaction = null)
+        {
+            try
+            {
+                SqlCommand cmd;
+
+                if (connection == null)
+                {
+                    cmd = new SqlCommand(
+                        "DELETE FROM [User] WHERE ID=@id",
+                        SqlConn,
+                        transaction
+                    );
+                }
+                else
+                {
+                    cmd = new SqlCommand(
+                        "DELETE FROM [User] WHERE ID=@id",
+                        connection,
+                        transaction
+                    );
+                }
+
+                cmd.Parameters.AddWithValue("@id", userID);
+                cmd.ExecuteNonQuery();
+            }
+            catch
+            {
+                throw;
+            }
+        }
+
+        public void AssignRoleToUser(int userID, int roleID)
+        {
+            try
+            {
+                using (SqlConn)
+                {
+                    using var cmd = new SqlCommand(
+                    "INSERT INTO UsersRoles (UserId, RoleId) VALUES (@userID, @roleID)",
+                    SqlConn);
+                    cmd.Parameters.AddWithValue("@userID", userID);
+                    cmd.Parameters.AddWithValue("@roleID", roleID);
+                    cmd.ExecuteNonQuery();
+                }
+            }
+            catch
+            {
+                throw;
+            }
+        }
+
+        public void DeleteUserRoles(int userID, SqlConnection connection = null, SqlTransaction transaction = null)
+        {
+            try
+            {
+                SqlCommand cmd;
+
+                if (connection == null)
+                {
+                    cmd = new SqlCommand(
+                        "DELETE FROM UsersRoles WHERE UserId=@userID",
+                        SqlConn,
+                        transaction
+                    );
+                }
+                else
+                {
+                    cmd = new SqlCommand(
+                        "DELETE FROM UsersRoles WHERE UserId=@userID",
+                        connection,
+                        transaction
+                    );
+                }
+
+                cmd.Parameters.AddWithValue("@userID", userID);
+                cmd.ExecuteNonQuery();
+            }
+            catch
+            {
+                throw;
+            }
+        }
     }
 }
