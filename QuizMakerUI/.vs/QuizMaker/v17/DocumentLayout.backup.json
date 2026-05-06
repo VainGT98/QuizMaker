@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerUI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{565E89F2-74B9-45E6-996B-5F7C39FE523E}|QuizMakerUI.csproj|c:\\users\\utente\\desktop\\quizmaker\\quizmakerui\\register.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{565E89F2-74B9-45E6-996B-5F7C39FE523E}|QuizMakerUI.csproj|solutionrelative:register.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{565E89F2-74B9-45E6-996B-5F7C39FE523E}|QuizMakerUI.csproj|c:\\users\\utente\\desktop\\quizmaker\\quizmakerui\\register.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{565E89F2-74B9-45E6-996B-5F7C39FE523E}|QuizMakerUI.csproj|solutionrelative:register.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{565E89F2-74B9-45E6-996B-5F7C39FE523E}|QuizMakerUI.csproj|c:\\users\\utente\\desktop\\quizmaker\\quizmakerui\\quizdetails.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{565E89F2-74B9-45E6-996B-5F7C39FE523E}|QuizMakerUI.csproj|solutionrelative:quizdetails.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{565E89F2-74B9-45E6-996B-5F7C39FE523E}|QuizMakerUI.csproj|c:\\users\\utente\\desktop\\quizmaker\\quizmakerui\\updatequestion.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -23,16 +31,8 @@
       "RelativeMoniker": "D:0:0:{565E89F2-74B9-45E6-996B-5F7C39FE523E}|QuizMakerUI.csproj|solutionrelative:updatequiz.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{565E89F2-74B9-45E6-996B-5F7C39FE523E}|QuizMakerUI.csproj|c:\\users\\utente\\desktop\\quizmaker\\quizmakerui\\quizdetails.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{565E89F2-74B9-45E6-996B-5F7C39FE523E}|QuizMakerUI.csproj|solutionrelative:quizdetails.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{565E89F2-74B9-45E6-996B-5F7C39FE523E}|QuizMakerUI.csproj|c:\\users\\utente\\desktop\\quizmaker\\quizmakerui\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{565E89F2-74B9-45E6-996B-5F7C39FE523E}|QuizMakerUI.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{565E89F2-74B9-45E6-996B-5F7C39FE523E}|QuizMakerUI.csproj|c:\\users\\utente\\desktop\\quizmaker\\quizmakerui\\register.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{565E89F2-74B9-45E6-996B-5F7C39FE523E}|QuizMakerUI.csproj|solutionrelative:register.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{565E89F2-74B9-45E6-996B-5F7C39FE523E}|QuizMakerUI.csproj|c:\\users\\utente\\desktop\\quizmaker\\quizmakerui\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -66,11 +66,11 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "QuizDetails.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerUI\\QuizDetails.xaml.cs",
               "RelativeDocumentMoniker": "QuizDetails.xaml.cs",
@@ -83,7 +83,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "UpdateQuiz.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerUI\\UpdateQuiz.xaml.cs",
               "RelativeDocumentMoniker": "UpdateQuiz.xaml.cs",
@@ -96,13 +96,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Register.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerUI\\Register.xaml.cs",
               "RelativeDocumentMoniker": "Register.xaml.cs",
               "ToolTip": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerUI\\Register.xaml.cs",
               "RelativeToolTip": "Register.xaml.cs",
-              "ViewState": "AgIAAFAAAAAAAAAAAAAIwGUAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAIwGEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-06T08:40:19.43Z",
               "EditorCaption": ""
@@ -121,7 +121,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "UpdateQuiz.xaml",
               "DocumentMoniker": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerUI\\UpdateQuiz.xaml",
               "RelativeDocumentMoniker": "UpdateQuiz.xaml",
@@ -133,7 +133,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "UpdateQuestion.xaml",
               "DocumentMoniker": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerUI\\UpdateQuestion.xaml",
               "RelativeDocumentMoniker": "UpdateQuestion.xaml",
@@ -145,7 +145,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "Register.xaml",
               "DocumentMoniker": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerUI\\Register.xaml",
               "RelativeDocumentMoniker": "Register.xaml",
@@ -205,7 +205,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "AddQuestion.xaml",
               "DocumentMoniker": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerUI\\AddQuestion.xaml",
               "RelativeDocumentMoniker": "AddQuestion.xaml",
@@ -229,7 +229,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerUI\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
