@@ -44,6 +44,7 @@ namespace QuizMakerUI
                     Content = $"Question {question.OrderNumber}",
                     Margin = new Thickness(5),
                     Tag = question,
+                    Style = (Style)Application.Current.Resources["SecondaryButton"]
                 };
                 
                 button.Click += (s, e) =>

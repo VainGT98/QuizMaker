@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:QuizMaker"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800"
-        ResizeMode="NoResize">
+        ResizeMode="NoResize"
+        Background="#1E1E2E">
     <Grid Height="450" Width="800">
         <Frame x:Name="MainFrame"
        NavigationUIVisibility="Hidden"/>
@@ -38,21 +39,26 @@
                 <TextBox Grid.Row="1" Grid.Column="1" Margin="10,10,0,10" 
                          FontSize="16"
                          x:Name="PasswordText" Visibility="Collapsed"/>
-                <Button Grid.Row="1" Grid.Column="2" Content="👁" Margin="10,10,0,10"
+                <Button Grid.Row="1" Grid.Column="2" Content="👁" 
+                        Margin="0,10,0,10"
                         x:Name="ButtonShowPassword"
-                        Click="ButtonShowPassword_Click"/>
+                        Click="ButtonShowPassword_Click"
+                        Style="{StaticResource SecondaryButton}"/>
             </Grid>
             <TextBlock/>
             <Button Content="Login" FontSize="16" Margin="15,0"
-                    Click="Button_Login"/>
+                    Click="Button_Login" 
+                    Style="{StaticResource PrimaryButton}"/>
             <TextBlock />
             <Button Content="Register" FontSize="13" Margin="50,0"
-                    Click="Button_Register"/>
+                    Click="Button_Register" 
+                    Style="{StaticResource SecondaryButton}"/>
             <TextBlock />
             <Button Content="Delete Account" FontSize="13" 
-                    Margin="100,0,100,0"
+                    Margin="75,0,75,0"
                     x:Name="ButtonDeleteAccount"
-                    Click="ButtonDeleteAccount_Click"/>
+                    Click="ButtonDeleteAccount_Click"
+                    Style="{StaticResource DangerButton}"/>
         </StackPanel>
     </Grid>
 </Window>

@@ -7,7 +7,7 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="CreateQuiz"
-      Background="White">
+      Background="#1E1E2E">
 
     <Grid Width="800" Height="450">
         <Grid.RowDefinitions>
@@ -51,10 +51,12 @@
         <Button Grid.Row="4" Grid.Column="1" Content="Cancel" 
                 HorizontalAlignment="Center" Margin="400,20,0,20"
                 FontSize="25" Padding="10" x:Name="ButtonCancel" 
-                Click="ButtonCancel_Click"/>
+                Click="ButtonCancel_Click"
+                Style="{StaticResource DangerButton}"/>
         <Button Grid.Row="4" Grid.Column="2" Content="Next" 
                 HorizontalAlignment="Center" Margin="0,20,0,20"
                 FontSize="25" Padding="10" x:Name="ButtonNext" 
-                Click="ButtonNext_Click"/>
+                Click="ButtonNext_Click"
+                Style="{StaticResource SecondaryButton}"/>
     </Grid>
 </Page>

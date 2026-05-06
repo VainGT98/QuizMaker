@@ -7,7 +7,7 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="QuizDetails"
-      Background="White">
+      Background="#1E1E2E">
 
     <Grid Width="800" Height="450">
         <Grid.RowDefinitions>
@@ -29,13 +29,18 @@
             <StackPanel x:Name="QuizDetailsStackPanel" Margin="20"/>
         </ScrollViewer>
         <Button Content="Back" Grid.Row="2" Grid.Column="2" 
-                Margin="20" FontSize="20" x:Name="BackButton"
-                Click="BackButton_Click"/>
+                Margin="20,10,20,20" FontSize="20" x:Name="BackButton"
+                Click="BackButton_Click"
+                Style="{StaticResource DangerButton}"/>
         <Button Content="Export To PDF" Grid.Row="2" Grid.Column="1"
-                Margin="300,20,20,20" FontSize="20" x:Name="ExportToPDFButton"
-                Click="ExportToPDFButton_Click"/>
+                Margin="300,10,20,20" FontSize="20" 
+                x:Name="ExportToPDFButton"
+                Click="ExportToPDFButton_Click"
+                Style="{StaticResource PrimaryButton}"/>
         <Button Content="Export To Excel" Grid.Row="2" Grid.Column="1"
-                Margin="50,20,250,20" FontSize="20" x:Name="ExportToExcelButton"
-                Click="ExportToExcelButton_Click"/>
+                Margin="50,10,250,20" FontSize="20" 
+                x:Name="ExportToExcelButton"
+                Click="ExportToExcelButton_Click"
+                Style="{StaticResource PrimaryButton}"/>
     </Grid>
 </Page>

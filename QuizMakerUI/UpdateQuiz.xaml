@@ -7,7 +7,7 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="UpdateQuiz"
-      Background="White">
+      Background="#1E1E2E">
 
     <Grid Width="800" Height="450">
         <Grid.RowDefinitions>
@@ -39,13 +39,16 @@
         </ScrollViewer>
 
         <Button Grid.Row="3" Grid.Column="2" Content="Cancel"
-                FontSize="20" Margin="20,10,20,10" x:Name="Cancel"
-                Click="Cancel_Click"/>
+                FontSize="20" Margin="10,5,10,10" x:Name="Cancel"
+                Click="Cancel_Click"
+                Style="{StaticResource DangerButton}"/>
         <Button Grid.Row="3" Grid.Column="1" Content="Add Question" 
-                Margin="20,10,20,10" FontSize="20" 
-                x:Name="ButtonAddQuestion" Click="ButtonAddQuestion_Click"/>
+                Margin="20,5,20,10" FontSize="20" 
+                x:Name="ButtonAddQuestion" Click="ButtonAddQuestion_Click"
+                Style="{StaticResource PrimaryButton}"/>
         <Button Grid.Row="3" Grid.Column="3" Content="Save"  
-                Margin="20,10,20,10" FontSize="20" 
-                x:Name="ButtonSave" Click="ButtonSave_Click"/>
+                Margin="20,5,20,10" FontSize="20" 
+                x:Name="ButtonSave" Click="ButtonSave_Click"
+                Style="{StaticResource PrimaryButton}"/>
     </Grid>
 </Page>

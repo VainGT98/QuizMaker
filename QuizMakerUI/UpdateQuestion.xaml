@@ -7,7 +7,7 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="UpdateQuestion"
-      Background="White">
+      Background="#1E1E2E">
 
     <Grid Width="800" Height="450">
         <Grid.RowDefinitions>
@@ -23,7 +23,7 @@
             <ColumnDefinition Width="2*"/>
         </Grid.ColumnDefinitions>
 
-        <TextBlock Text="Add Question" FontSize="30" 
+        <TextBlock Text="Update Question" FontSize="30" 
                    HorizontalAlignment="Center" 
                    Grid.ColumnSpan="4"/>
         <TextBlock Grid.Row="1" Text="Question:" 
@@ -32,7 +32,7 @@
                    x:Name="QuestionLabel"
                    FontWeight="Bold"/>
         <TextBox Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"
-                 Margin="10,30,10,30" x:Name="QuestionText"/>
+                 Margin="10,20,10,20" x:Name="QuestionText"/>
 
         <ScrollViewer VerticalScrollBarVisibility="Auto"
                       Grid.Row="2" Grid.Column="2">
@@ -42,20 +42,23 @@
             <TextBox x:Name="TxtPath" Width="90" Margin="5"/>
             <Button x:Name="ButtonChooseImage" Content="Choose Image" 
                     Click="ButtonChooseImage_Click"
-                    Width="90" Margin="5"/>
+                    Style="{StaticResource SecondaryButton}"/>
             <Image x:Name="Image" Width="90" Margin="5"/>
         </StackPanel>
 
         <Button Grid.Row="3" Grid.Column="2" Content="Cancel"  
                 Margin="300,20,0,20" FontSize="20" Padding="5" 
-                x:Name="ButtonCancel" Click="ButtonCancel_Click"/>
+                x:Name="ButtonCancel" Click="ButtonCancel_Click"
+                Style="{StaticResource DangerButton}"/>
         <Button Grid.Row="3" Grid.Column="3" Content="Save" 
                 HorizontalAlignment="Center" 
                 Margin="40,20,0,20" FontSize="20" Padding="5" 
-                x:Name="ButtonSave" Click="ButtonSave_Click"/>
+                x:Name="ButtonSave" Click="ButtonSave_Click"
+                Style="{StaticResource PrimaryButton}"/>
         <Button Grid.Column="3" Grid.Row="3" Content="Back" 
                 HorizontalAlignment="Left" 
                 Margin="20,20,0,20" FontSize="20" Padding="5" 
-                x:Name="ButtonBack" Click= "ButtonBack_Click"/>
+                x:Name="ButtonBack" Click= "ButtonBack_Click"
+                Style="{StaticResource DangerButton}"/>
     </Grid>
 </Page>

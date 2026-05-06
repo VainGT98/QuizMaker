@@ -7,7 +7,7 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="CreateQuestion"
-      Background="White">
+      Background="#1E1E2E">
 
     <Grid Width="800" Height="450">
         <Grid.RowDefinitions>
@@ -49,14 +49,17 @@
         <Button Grid.Row="3" Grid.Column="2" Content="Cancel" 
                 HorizontalAlignment="Center" 
                 Margin="100,20,0,20" FontSize="20" Padding="5" 
-                x:Name="ButtonCancel" Click="ButtonCancel_Click"/>
+                x:Name="ButtonCancel" Click="ButtonCancel_Click"
+                Style="{StaticResource DangerButton}"/>
         <Button Grid.Row="3" Grid.Column="2" Content="Save" 
                 HorizontalAlignment="Center" 
                 Margin="300,20,0,20" FontSize="20" Padding="5" 
-                x:Name="ButtonSave" Click="ButtonSave_Click"/>
+                x:Name="ButtonSave" Click="ButtonSave_Click"
+                Style="{StaticResource PrimaryButton}"/>
         <Button Grid.Row="3" Grid.Column="3" Content="Next" 
                 HorizontalAlignment="Center" 
                 Margin="0,20,0,20" FontSize="20" Padding="5" 
-                x:Name="ButtonNext" Click="ButtonNext_Click"/>
+                x:Name="ButtonNext" Click="ButtonNext_Click"
+                Style="{StaticResource SecondaryButton}"/>
     </Grid>
 </Page>

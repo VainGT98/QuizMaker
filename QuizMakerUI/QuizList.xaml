@@ -7,7 +7,7 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="QuizList"
-      Background="White">
+      Background="#1E1E2E">
 
       <Grid Width="800" Height="450">
         <Grid.RowDefinitions>
@@ -48,21 +48,24 @@
                                         RelativeSource={RelativeSource AncestorType=DataGrid}}"
                                         CommandParameter="{Binding}" 
                                         Click="Button_Update"
-                                        Tag="{Binding}"/>
+                                        Tag="{Binding}"
+                                         Style="{StaticResource PrimaryButton}"/>
 
                                 <Button Content="Delete" Margin="2"
                                         Command="{Binding DataContext.DeleteCommand, 
                                         RelativeSource={RelativeSource AncestorType=DataGrid}}"
                                         CommandParameter="{Binding}" 
                                         Click="Button_Delete"
-                                        Tag="{Binding}"/>
+                                        Tag="{Binding}"
+                                        Style="{StaticResource DangerButton}"/>
                                 
                                 <Button Content="Details" Margin="2"
                                         Command="{Binding DataContext.DetailsCommand, 
                                         RelativeSource={RelativeSource AncestorType=DataGrid}}"
                                         CommandParameter="{Binding}" 
                                         Click="Button_Details"
-                                        Tag="{Binding}"/>
+                                        Tag="{Binding}"
+                                        Style="{StaticResource SecondaryButton}"/>
                             </StackPanel>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
@@ -80,6 +83,7 @@
                 HorizontalAlignment="Center" VerticalAlignment="Center"
                 Command="{Binding AddNewQuizCommand}"
                 Click="Button_AddNewQuiz"
-                x:Name="AddNewQuiz"/>
+                x:Name="AddNewQuiz"
+                Style="{StaticResource PrimaryButton}"/>
       </Grid>
 </Page>

@@ -118,7 +118,8 @@ namespace QuizMakerUI
                 {
                     Content = "↑",
                     Tag = question,
-                    Margin = new Thickness(2)
+                    Margin = new Thickness(2),
+                    Style = (Style)Application.Current.Resources["SecondaryButton"]
                 };
                 upButton.Click += MoveUp_Click;
 
@@ -126,7 +127,8 @@ namespace QuizMakerUI
                 {
                     Content = "↓",
                     Tag = question,
-                    Margin = new Thickness(2)
+                    Margin = new Thickness(2),
+                    Style = (Style)Application.Current.Resources["SecondaryButton"]
                 };
                 downButton.Click += MoveDown_Click;
 
@@ -164,14 +166,16 @@ namespace QuizMakerUI
                     {
                         Content = "↑",
                         Tag = (question, answer),  // tupla: serve anche la question per accedere alla lista
-                        Margin = new Thickness(2)
+                        Margin = new Thickness(2),
+                        Style = (Style)Application.Current.Resources["SecondaryButton"]
                     };
                     answerUpButton.Click += MoveAnswerUp_Click;
                     Button answerDownButton = new Button
                     {
                         Content = "↓",
                         Tag = (question, answer),
-                        Margin = new Thickness(2)
+                        Margin = new Thickness(2),
+                        Style = (Style)Application.Current.Resources["SecondaryButton"]
                     };
                     answerDownButton.Click += MoveAnswerDown_Click;
                     answerButtonsPanel.Children.Add(answerUpButton);
