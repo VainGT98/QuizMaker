@@ -6,7 +6,6 @@
         xmlns:local="clr-namespace:QuizMakerUI"
         mc:Ignorable="d"
         Title="Window1" Height="500" Width="900"
-        ResizeMode="NoResize"
         Background="#1E1E2E">
 
     <Frame Source="QuizList.xaml" x:Name="MainFrame" NavigationUIVisibility="Hidden"/>

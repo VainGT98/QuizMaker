@@ -35,8 +35,6 @@ namespace QuizMaker
 
                 if(login)
                 {
-                    MessageBox.Show("Login successful");
-
                     //NavigationWindow nav = new NavigationWindow();
                     //nav.Navigate(new QuizList(userModel));
                     //nav.Show();
