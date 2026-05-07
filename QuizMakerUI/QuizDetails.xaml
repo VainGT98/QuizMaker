@@ -33,14 +33,19 @@
                 Click="BackButton_Click"
                 Style="{StaticResource DangerButton}"/>
         <Button Content="Export To PDF" Grid.Row="2" Grid.Column="1"
-                Margin="300,10,20,20" FontSize="20" 
+                Margin="375,10,0,20" FontSize="20" 
                 x:Name="ExportToPDFButton"
                 Click="ExportToPDFButton_Click"
                 Style="{StaticResource PrimaryButton}"/>
         <Button Content="Export To Excel" Grid.Row="2" Grid.Column="1"
-                Margin="50,10,250,20" FontSize="20" 
+                Margin="200,10,175,20" FontSize="20" 
                 x:Name="ExportToExcelButton"
                 Click="ExportToExcelButton_Click"
+                Style="{StaticResource PrimaryButton}"/>
+        <Button Content="Export To JSON" Grid.Row="2" Grid.Column="1"
+                Margin="0,10,350,20" FontSize="20" 
+                x:Name="ExportToJSONButton"
+                Click="ExportToJSONButton_Click"
                 Style="{StaticResource PrimaryButton}"/>
     </Grid>
 </Page>

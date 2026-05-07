@@ -276,5 +276,21 @@ namespace QuizMakerUI
                 MessageBox.Show("CSV exported successfully!");
             }
         }
+
+        private void ExportToJSONButton_Click(object sender, RoutedEventArgs e)
+        {
+            SaveFileDialog dialog = new SaveFileDialog
+            {
+                Filter = "JSON files (*.json)|*.json",
+                FileName = _quiz.Title
+            };
+
+            if (dialog.ShowDialog() == true)
+            {
+                BLLExportJSON bLLExportJSON = new BLLExportJSON();
+                bLLExportJSON.ExportQuizToJson(_quiz, dialog.FileName);
+                MessageBox.Show("JSON exported successfully!");
+            }
+        }
     }
 }
