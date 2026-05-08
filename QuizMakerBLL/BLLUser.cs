@@ -63,6 +63,11 @@ namespace QuizMakerBLL
 
             try
             {   
+                List<QuizModel> quizzes = new BLLQuiz().GetQuizzesByUserID(userID, SqlConn, transaction);
+                foreach (QuizModel quiz in quizzes)
+                {
+                    new BLLQuiz().DeleteQuiz(quiz, SqlConn, transaction);
+                }
                 DeleteUserRoles(userID, SqlConn, transaction);
                 DALUser dalUser = new DALUser();
                 dalUser.DeleteUser(userID, SqlConn, transaction);

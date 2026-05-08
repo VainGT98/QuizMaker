@@ -110,12 +110,18 @@ namespace QuizMaker
                     int userID = bLLUser.FindUserID(Username.Text);
                     bLLUser.DeleteUser(userID);
                     //MessageBox.Show("Account deleted successfully");
-                    new CustomMessageBox("Account deleted successfully", " - Account Deleted", CustomMessageBox.MessageBoxType.Ok).ShowDialog();
+                    var box = new CustomMessageBox("Account deleted successfully", " - Account Deleted", CustomMessageBox.MessageBoxType.Ok);
+                    box.Owner = Window.GetWindow(this); // imposta la finestra padre
+                    box.WindowStartupLocation = WindowStartupLocation.CenterOwner; // centra rispetto al padre
+                    box.ShowDialog();
                 }
                 else
                 {
                     //MessageBox.Show("Username or password incorrect");
-                    new CustomMessageBox("Username or password incorrect", " - Login Error", CustomMessageBox.MessageBoxType.Ok).ShowDialog();
+                    var box = new CustomMessageBox("Username or password incorrect", " - Login Error", CustomMessageBox.MessageBoxType.Ok);
+                    box.Owner = Window.GetWindow(this); // imposta la finestra padre
+                    box.WindowStartupLocation = WindowStartupLocation.CenterOwner; // centra rispetto al padre
+                    box.ShowDialog();
                 }
             }
             catch (Exception ex)

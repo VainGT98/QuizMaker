@@ -61,13 +61,24 @@ namespace QuizMakerDAL
             }
         }
 
-        public void DeleteQuiz(QuizModel quiz)
+        public void DeleteQuiz(QuizModel quiz, SqlConnection connection = null, SqlTransaction transaction = null)
         {
             try
             {
-                using var cmd = new SqlCommand(
-                "DELETE FROM Quiz WHERE ID = @id",
-                SqlConn);
+                SqlCommand cmd;
+                if (connection == null)
+                {
+                    cmd = new SqlCommand(
+                    "DELETE FROM Quiz WHERE ID = @id",
+                    SqlConn, transaction);
+                }
+                else
+                {
+                    cmd = new SqlCommand(
+                    "DELETE FROM Quiz WHERE ID = @id",
+                    connection, transaction);
+                }
+
                 cmd.Parameters.AddWithValue("@id", quiz.QuizID);
                 cmd.ExecuteNonQuery();
             }
@@ -96,15 +107,20 @@ namespace QuizMakerDAL
             }
         }
 
-        public List<QuizModel> GetQuizzesByUserID(int userID)
+        public List<QuizModel> GetQuizzesByUserID(int userID, SqlConnection connection = null, SqlTransaction transaction = null)
         {
             try
             {
                 List<QuizModel> quizzes = new List<QuizModel>();
-
-                using var cmd = new SqlCommand(
-                "SELECT * FROM Quiz WHERE UserId = @id",
-                SqlConn);
+                SqlCommand cmd;
+                if (connection == null)
+                {
+                    cmd = new SqlCommand("SELECT * FROM Quiz WHERE UserId = @id",SqlConn, transaction);
+                }
+                else
+                {
+                    cmd = new SqlCommand("SELECT * FROM Quiz WHERE UserId = @id", connection, transaction);
+                }
                 cmd.Parameters.AddWithValue("@id", userID);
                 using var reader = cmd.ExecuteReader();
                 while (reader.Read())

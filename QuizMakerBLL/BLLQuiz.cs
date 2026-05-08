@@ -63,17 +63,17 @@ namespace QuizMakerBLL
             }
         }
 
-        public void DeleteQuiz(QuizModel quiz)
+        public void DeleteQuiz(QuizModel quiz, SqlConnection connection = null, SqlTransaction transaction = null)
         {
             try
             {
                 foreach (QuestionModel question in quiz.QuestionsList)
                 {
                     BLLQuestion bLLQuestion = new BLLQuestion();
-                    bLLQuestion.DeleteQuestion(question);
+                    bLLQuestion.DeleteQuestion(question, connection, transaction);
                 }
                 DALQuiz dalQuiz = new DALQuiz();
-                dalQuiz.DeleteQuiz(quiz);
+                dalQuiz.DeleteQuiz(quiz, connection, transaction);
             }
             catch
             {
@@ -124,12 +124,12 @@ namespace QuizMakerBLL
             }
         }
 
-        public List<QuizModel> GetQuizzesByUserID(int userID)
+        public List<QuizModel> GetQuizzesByUserID(int userID, SqlConnection connection = null, SqlTransaction transaction = null)
         {
             try
             {
                 DALQuiz dalQuiz = new DALQuiz();
-                return dalQuiz.GetQuizzesByUserID(userID);
+                return dalQuiz.GetQuizzesByUserID(userID, connection, transaction);
             }
             catch
             {

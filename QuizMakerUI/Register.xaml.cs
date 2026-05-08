@@ -52,7 +52,10 @@ namespace QuizMaker
                     bLLUser.AssignRoleToUser(userID, 2); // Assegna ruolo "Utente" (ID 2)
 
                     //MessageBox.Show("Registered");
-                    new CustomMessageBox ("Registration successful! You can now log in.", "Success", CustomMessageBox.MessageBoxType.Ok).ShowDialog();
+                    var box = new CustomMessageBox("Registration successful! You can now log in.", "Success", CustomMessageBox.MessageBoxType.Ok);
+                    box.Owner = Window.GetWindow(this); // imposta la finestra padre
+                    box.WindowStartupLocation = WindowStartupLocation.CenterOwner; // centra rispetto al padre
+                    box.ShowDialog();
 
                     MainWindow mainWindow = new MainWindow();
                     mainWindow.Show();
@@ -63,7 +66,10 @@ namespace QuizMaker
                 else
                 {
                     //MessageBox.Show("Registration failed. Please try again.");
-                    new CustomMessageBox("Registration failed. Please try again.", "Error", CustomMessageBox.MessageBoxType.Ok).ShowDialog();   
+                    var box = new CustomMessageBox("Registration failed. Please try again.", "Error", CustomMessageBox.MessageBoxType.Ok);
+                    box.Owner = Window.GetWindow(this); // imposta la finestra padre
+                    box.WindowStartupLocation = WindowStartupLocation.CenterOwner; // centra rispetto al padre
+                    box.ShowDialog(); 
                 }
             }
             catch (Exception ex)

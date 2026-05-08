@@ -258,7 +258,10 @@ namespace QuizMakerUI
                 BLLExportPDF bLLExportPDF = new BLLExportPDF();
                 bLLExportPDF.ExportQuizToPdf(_quiz, dialog.FileName);
                 //MessageBox.Show("PDF exported successfully!");
-                new CustomMessageBox("PDF exported successfully!", "Success", CustomMessageBox.MessageBoxType.Ok).ShowDialog();
+                var box = new CustomMessageBox("PDF exported successfully!", "Success", CustomMessageBox.MessageBoxType.Ok);
+                box.Owner = Window.GetWindow(this); // imposta la finestra padre
+                box.WindowStartupLocation = WindowStartupLocation.CenterOwner; // centra rispetto al padre
+                box.ShowDialog();
             }
         }
 
@@ -275,7 +278,10 @@ namespace QuizMakerUI
                 BLLExportCSV bLLExportCSV = new BLLExportCSV();
                 bLLExportCSV.ExportQuizToCsv(_quiz, dialog.FileName);
                 //MessageBox.Show("CSV exported successfully!");
-                new CustomMessageBox("CSV exported successfully!", "Success", CustomMessageBox.MessageBoxType.Ok).ShowDialog();
+                var box = new CustomMessageBox("CSV exported successfully!", "Success", CustomMessageBox.MessageBoxType.Ok);
+                box.Owner = Window.GetWindow(this); // imposta la finestra padre
+                box.WindowStartupLocation = WindowStartupLocation.CenterOwner; // centra rispetto al padre
+                box.ShowDialog();
             }
         }
 
@@ -292,7 +298,10 @@ namespace QuizMakerUI
                 BLLExportJSON bLLExportJSON = new BLLExportJSON();
                 bLLExportJSON.ExportQuizToJson(_quiz, dialog.FileName);
                 //MessageBox.Show("JSON exported successfully!");
-                new CustomMessageBox("JSON exported successfully!", "Success", CustomMessageBox.MessageBoxType.Ok).ShowDialog();
+                var box = new CustomMessageBox("JSON exported successfully!", "Success", CustomMessageBox.MessageBoxType.Ok);
+                box.Owner = Window.GetWindow(this); // imposta la finestra padre
+                box.WindowStartupLocation = WindowStartupLocation.CenterOwner; // centra rispetto al padre
+                box.ShowDialog();
             }
         }
     }

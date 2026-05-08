@@ -58,6 +58,8 @@ namespace QuizMakerUI
             QuizModel quiz1 = bLLQuiz.GetQuizByQuizID(quiz.QuizID.Value);
 
             CustomMessageBox customMessageBox = new CustomMessageBox($"Are you sure you want to delete the quiz '{quiz.Title}'?", "Confirm Deletion", CustomMessageBox.MessageBoxType.YesNo);
+            customMessageBox.Owner = Window.GetWindow(this); // imposta la finestra padre
+            customMessageBox.WindowStartupLocation = WindowStartupLocation.CenterOwner; // centra rispetto al padre
             customMessageBox.ShowDialog();
             if (customMessageBox.Result)
             {

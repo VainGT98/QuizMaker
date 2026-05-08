@@ -70,7 +70,10 @@ namespace QuizMakerUI
             if (string.IsNullOrWhiteSpace(QuizTitle.Text))
             {
                 //MessageBox.Show("Please enter a title for the quiz.", "Validation Error", MessageBoxButton.OK, MessageBoxImage.Warning);
-                new CustomMessageBox("Please enter a title for the quiz.", "Validation Error", CustomMessageBox.MessageBoxType.Ok).ShowDialog();
+                var box = new CustomMessageBox("Please enter a title for the quiz.", "Validation Error", CustomMessageBox.MessageBoxType.Ok);
+                box.Owner = Window.GetWindow(this); // imposta la finestra padre
+                box.WindowStartupLocation = WindowStartupLocation.CenterOwner; // centra rispetto al padre
+                box.ShowDialog();
                 return;
             }
             else
@@ -81,7 +84,10 @@ namespace QuizMakerUI
                 BLLQuiz bLLQuiz = new BLLQuiz();
                 bLLQuiz.UpdateQuiz(quiz);
                 //MessageBox.Show("Quiz updated successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
-                new CustomMessageBox("Quiz updated successfully!", "Success", CustomMessageBox.MessageBoxType.Ok).ShowDialog();
+                var box = new CustomMessageBox("Quiz updated successfully!", "Success", CustomMessageBox.MessageBoxType.Ok);
+                box.Owner = Window.GetWindow(this); // imposta la finestra padre
+                box.WindowStartupLocation = WindowStartupLocation.CenterOwner; // centra rispetto al padre
+                box.ShowDialog();
                 NavigationService.Navigate(new QuizList(_user));
             }
         }
