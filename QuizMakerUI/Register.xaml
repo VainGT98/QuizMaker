@@ -10,7 +10,7 @@
       Background="#1E1E2E">
 
     <Grid Height="450" Width="800">
-        <StackPanel Margin="250,100">
+        <StackPanel Margin="250,90">
             <TextBlock Text="Register" FontSize="25" HorizontalAlignment="Center"/>
             <TextBlock/>
             <Grid>
@@ -47,6 +47,11 @@
             <Button Content="Register" FontSize="16" Margin="15,0"
                     Click="Button_Register"
                     Style="{StaticResource PrimaryButton}"/>
+            <TextBlock/>
+            <Button Content="Back to Login" FontSize="16" Margin="50,0"
+                    x:Name="ButtonBackToLogin"
+                    Click="ButtonBackToLogin_Click"
+                    Style="{StaticResource SecondaryButton}"/>
         </StackPanel>
     </Grid>
 </Page>

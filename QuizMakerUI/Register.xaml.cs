@@ -1,6 +1,7 @@
 ﻿using Microsoft.Win32;
 using QuizMakerBLL;
 using QuizMakerModel;
+using QuizMakerUI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -50,7 +51,8 @@ namespace QuizMaker
 
                     bLLUser.AssignRoleToUser(userID, 2); // Assegna ruolo "Utente" (ID 2)
 
-                    MessageBox.Show("Registered");
+                    //MessageBox.Show("Registered");
+                    new CustomMessageBox ("Registration successful! You can now log in.", "Success", CustomMessageBox.MessageBoxType.Ok).ShowDialog();
 
                     MainWindow mainWindow = new MainWindow();
                     mainWindow.Show();
@@ -60,7 +62,8 @@ namespace QuizMaker
                 }
                 else
                 {
-                    MessageBox.Show("Registration failed. Please try again.");
+                    //MessageBox.Show("Registration failed. Please try again.");
+                    new CustomMessageBox("Registration failed. Please try again.", "Error", CustomMessageBox.MessageBoxType.Ok).ShowDialog();   
                 }
             }
             catch (Exception ex)
@@ -95,6 +98,15 @@ namespace QuizMaker
                 Password.Visibility = Visibility.Visible;
                 PasswordText.Visibility = Visibility.Collapsed;
             }
+        }
+
+        private void ButtonBackToLogin_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+
+            Window currentWindow = Window.GetWindow(this);
+            currentWindow?.Close();
         }
     }
 }

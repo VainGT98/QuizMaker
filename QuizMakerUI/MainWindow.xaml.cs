@@ -45,7 +45,8 @@ namespace QuizMaker
                 }
                 else
                 {
-                    MessageBox.Show("Username or password incorrect");
+                    //MessageBox.Show("Username or password incorrect");
+                    new CustomMessageBox("Username or password incorrect", " - Login Error", CustomMessageBox.MessageBoxType.Ok).ShowDialog();
                 }
             }            
             catch (Exception ex)
@@ -108,11 +109,13 @@ namespace QuizMaker
                     BLLUser bLLUser = new BLLUser();
                     int userID = bLLUser.FindUserID(Username.Text);
                     bLLUser.DeleteUser(userID);
-                    MessageBox.Show("Account deleted successfully");
+                    //MessageBox.Show("Account deleted successfully");
+                    new CustomMessageBox("Account deleted successfully", " - Account Deleted", CustomMessageBox.MessageBoxType.Ok).ShowDialog();
                 }
                 else
                 {
-                    MessageBox.Show("Username or password incorrect");
+                    //MessageBox.Show("Username or password incorrect");
+                    new CustomMessageBox("Username or password incorrect", " - Login Error", CustomMessageBox.MessageBoxType.Ok).ShowDialog();
                 }
             }
             catch (Exception ex)

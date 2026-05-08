@@ -47,14 +47,14 @@
         </StackPanel>
 
         <Button Grid.Row="3" Grid.Column="3" Content="Save" 
-        HorizontalAlignment="Center" 
-        Margin="40,20,0,20" FontSize="20" Padding="5" 
-        x:Name="ButtonSave" Click="ButtonSave_Click"
+                HorizontalAlignment="Center" 
+                Margin="40,20,0,20" FontSize="20" Padding="5" 
+                x:Name="ButtonSave" Click="ButtonSave_Click"
                 Style="{StaticResource PrimaryButton}"/>
         <Button Grid.Column="3" Grid.Row="3" Content="Back" 
-        HorizontalAlignment="Left" 
-        Margin="20,20,0,20" FontSize="20" Padding="5" 
-        x:Name="ButtonBack" Click="ButtonBack_Click"
+                HorizontalAlignment="Left" 
+                Margin="20,20,0,20" FontSize="20" Padding="5" 
+                x:Name="ButtonBack" Click="ButtonBack_Click"
                 Style="{StaticResource DangerButton}"/>
     </Grid>
 </Page>

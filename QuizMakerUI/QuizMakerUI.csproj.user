@@ -11,6 +11,9 @@
     <Compile Update="CreateQuiz.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="CustomMessageBox.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="QuizDetails.xaml.cs">
       <SubType>Code</SubType>
     </Compile>

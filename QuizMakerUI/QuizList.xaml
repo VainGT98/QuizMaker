@@ -25,7 +25,7 @@
         <DataGrid Grid.Row="1" Grid.ColumnSpan="2" x:Name="dataGrid" 
                   Margin="15,0,15,15" AutoGenerateColumns="False">
             <DataGrid.Columns>
-                <!-- Colonna con 2 bottoni -->
+                <!-- Colonna con 3 bottoni -->
                 <DataGridTemplateColumn Header="Action">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
@@ -43,29 +43,58 @@
                                     </Style>
                                  </StackPanel.Style>
 
-                                 <Button Content="Edit" Margin="2"
+                                <Button Margin="2"
                                         Command="{Binding DataContext.EditCommand, 
                                         RelativeSource={RelativeSource AncestorType=DataGrid}}"
                                         CommandParameter="{Binding}" 
                                         Click="Button_Update"
                                         Tag="{Binding}"
-                                         Style="{StaticResource PrimaryButton}"/>
-
-                                <Button Content="Delete" Margin="2"
+                                         Style="{StaticResource PrimaryButton}">
+                                    <Button.Content>
+                                        <StackPanel Orientation="Horizontal">
+                                            <TextBlock Text="&#xE70F;" 
+                                                       FontFamily="Segoe MDL2 Assets"
+                                                       Margin="0,0,6,0"
+                                                       VerticalAlignment="Center"/>
+                                            <TextBlock Text="Edit" VerticalAlignment="Center"/>
+                                        </StackPanel>
+                                    </Button.Content>
+                                </Button>
+                                <Button Margin="2"
                                         Command="{Binding DataContext.DeleteCommand, 
                                         RelativeSource={RelativeSource AncestorType=DataGrid}}"
                                         CommandParameter="{Binding}" 
                                         Click="Button_Delete"
                                         Tag="{Binding}"
-                                        Style="{StaticResource DangerButton}"/>
-                                
-                                <Button Content="Details" Margin="2"
+                                        Style="{StaticResource DangerButton}">
+                                    <Button.Content>
+                                        <StackPanel Orientation="Horizontal">
+                                            <TextBlock Text="&#xE74D;" 
+                                                       FontFamily="Segoe MDL2 Assets"
+                                                       Margin="0,0,6,0"
+                                                       VerticalAlignment="Center"/>
+                                            <TextBlock Text="Delete" VerticalAlignment="Center"/>
+                                        </StackPanel>
+                                    </Button.Content>
+                                </Button>
+
+                                <Button Margin="2"
                                         Command="{Binding DataContext.DetailsCommand, 
                                         RelativeSource={RelativeSource AncestorType=DataGrid}}"
                                         CommandParameter="{Binding}" 
                                         Click="Button_Details"
                                         Tag="{Binding}"
-                                        Style="{StaticResource SecondaryButton}"/>
+                                        Style="{StaticResource SecondaryButton}">
+                                    <Button.Content>
+                                        <StackPanel Orientation="Horizontal">
+                                            <TextBlock Text="&#xE8A9;" 
+                                                       FontFamily="Segoe MDL2 Assets"
+                                                       Margin="0,0,6,0"
+                                                       VerticalAlignment="Center"/>
+                                            <TextBlock Text="Details" VerticalAlignment="Center"/>
+                                        </StackPanel>
+                                    </Button.Content>
+                                </Button>
                             </StackPanel>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>

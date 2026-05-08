@@ -68,22 +68,26 @@ namespace QuizMakerUI
         {
             if (string.IsNullOrWhiteSpace(QuestionText.Text))
             {
-                MessageBox.Show("Please enter a question text.", "Validation Error", MessageBoxButton.OK, MessageBoxImage.Warning);
+                //MessageBox.Show("Please enter a question text.", "Validation Error", MessageBoxButton.OK, MessageBoxImage.Warning);
+                new CustomMessageBox("Please enter a question text.", " - Validation Error", CustomMessageBox.MessageBoxType.Ok).ShowDialog();
                 return;
             }
             else if (Panel.Children.OfType<TextBox>().Any(tb => string.IsNullOrWhiteSpace(tb.Text)))
             {
-                MessageBox.Show("Please fill in all answer fields.", "Validation Error", MessageBoxButton.OK, MessageBoxImage.Warning);
+                //MessageBox.Show("Please fill in all answer fields.", "Validation Error", MessageBoxButton.OK, MessageBoxImage.Warning);
+                new CustomMessageBox("Please fill in all answer fields.", " - Validation Error", CustomMessageBox.MessageBoxType.Ok).ShowDialog();
                 return;
             }
             else if (!Panel.Children.OfType<RadioButton>().Any(rb => rb.IsChecked == true))
             {
-                MessageBox.Show("Please select the correct answer.", "Validation Error", MessageBoxButton.OK, MessageBoxImage.Warning);
+                //MessageBox.Show("Please select the correct answer.", "Validation Error", MessageBoxButton.OK, MessageBoxImage.Warning);
+                new CustomMessageBox("Please select the correct answer.", " - Validation Error", CustomMessageBox.MessageBoxType.Ok).ShowDialog();
                 return;
             }
             else if (Panel.Children.OfType<RadioButton>().Count(rb => rb.IsChecked == true) > 1)
             {
-                MessageBox.Show("Please select only one correct answer.", "Validation Error", MessageBoxButton.OK, MessageBoxImage.Warning);
+                //MessageBox.Show("Please select only one correct answer.", "Validation Error", MessageBoxButton.OK, MessageBoxImage.Warning);
+                new CustomMessageBox("Please select only one correct answer.", " - Validation Error", CustomMessageBox.MessageBoxType.Ok).ShowDialog();
                 return;
             }
             else
@@ -117,7 +121,7 @@ namespace QuizMakerUI
                 BLLQuiz bLLQuiz = new BLLQuiz();
                 bLLQuiz.UpdateQuiz(_quiz);
 
-                MessageBox.Show("Question added successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                new CustomMessageBox("Question added successfully!", " - Success", CustomMessageBox.MessageBoxType.Ok).ShowDialog();
                 NavigationService.Navigate(new UpdateQuiz(_quiz, _user));
             }
         }
@@ -133,7 +137,8 @@ namespace QuizMakerUI
             {
                 if (!dlg.FileName.EndsWith(".png", StringComparison.OrdinalIgnoreCase) && !dlg.FileName.EndsWith(".jpg", StringComparison.OrdinalIgnoreCase))
                 {
-                    MessageBox.Show("Please select a valid image file (PNG or JPG).", "Invalid File", MessageBoxButton.OK, MessageBoxImage.Error);
+                    //MessageBox.Show("Please select a valid image file (PNG or JPG).", "Invalid File", MessageBoxButton.OK, MessageBoxImage.Error);
+                    new CustomMessageBox("Please select a valid image file (PNG or JPG).", " - Invalid File", CustomMessageBox.MessageBoxType.Ok).ShowDialog();
                     return;
                 }
                 else

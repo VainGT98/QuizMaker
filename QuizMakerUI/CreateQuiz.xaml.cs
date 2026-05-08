@@ -36,18 +36,21 @@ namespace QuizMakerUI
         {
             if (string.IsNullOrEmpty(QuizTitle.Text) || string.IsNullOrEmpty(QuestionNumber.Text) || AnswerNumber.SelectedItem == null)
             {
-                MessageBox.Show("Please fill in all fields.");
+                //MessageBox.Show("Please fill in all fields.");
+                new CustomMessageBox("Please fill in all fields.", " - Validation Error", CustomMessageBox.MessageBoxType.Ok).ShowDialog();
                 return;
             }
             else if(!int.TryParse(QuestionNumber.Text, out int questionNum) || questionNum <= 0)
             {
-                MessageBox.Show("Please enter a valid positive integer for the number of questions.");
+                //MessageBox.Show("Please enter a valid positive integer for the number of questions.");
+                new CustomMessageBox("Please enter a valid positive integer for the number of questions.", " - Validation Error", CustomMessageBox.MessageBoxType.Ok).ShowDialog();
                 return;
                
             }
             else if (AnswerNumber.SelectedItem == null)
             {
-                MessageBox.Show("Please select the number of answers.");
+                //MessageBox.Show("Please select the number of answers.");
+                new CustomMessageBox("Please select the number of answers.", " - Validation Error", CustomMessageBox.MessageBoxType.Ok).ShowDialog();
                 return;
             }
             else

@@ -9,7 +9,7 @@
         <SolidColorBrush x:Key="SurfaceBrush"        Color="#313244"/>
         <SolidColorBrush x:Key="BorderBrush"         Color="#45475A"/>
         <SolidColorBrush x:Key="TextBrush"           Color="#CDD6F4"/>
-        <SolidColorBrush x:Key="SubtextBrush"        Color="#6C7086"/>
+        <SolidColorBrush x:Key="SubtextBrush"        Color="#FFCBCEDE"/>
         <SolidColorBrush x:Key="AccentBrush"         Color="#FF3069C5"/>
         <SolidColorBrush x:Key="AccentHoverBrush"    Color="#B4D0FF"/>
         <SolidColorBrush x:Key="AccentPressedBrush"  Color="#6A9FE0"/>

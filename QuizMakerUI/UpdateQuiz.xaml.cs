@@ -69,7 +69,8 @@ namespace QuizMakerUI
         {
             if (string.IsNullOrWhiteSpace(QuizTitle.Text))
             {
-                MessageBox.Show("Please enter a title for the quiz.", "Validation Error", MessageBoxButton.OK, MessageBoxImage.Warning);
+                //MessageBox.Show("Please enter a title for the quiz.", "Validation Error", MessageBoxButton.OK, MessageBoxImage.Warning);
+                new CustomMessageBox("Please enter a title for the quiz.", "Validation Error", CustomMessageBox.MessageBoxType.Ok).ShowDialog();
                 return;
             }
             else
@@ -79,7 +80,8 @@ namespace QuizMakerUI
                 quiz.Title = QuizTitle.Text;
                 BLLQuiz bLLQuiz = new BLLQuiz();
                 bLLQuiz.UpdateQuiz(quiz);
-                MessageBox.Show("Quiz updated successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                //MessageBox.Show("Quiz updated successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                new CustomMessageBox("Quiz updated successfully!", "Success", CustomMessageBox.MessageBoxType.Ok).ShowDialog();
                 NavigationService.Navigate(new QuizList(_user));
             }
         }

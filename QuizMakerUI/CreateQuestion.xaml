@@ -32,18 +32,19 @@
                    x:Name="QuestionLabel"
                    FontWeight="Bold"/>
         <TextBox Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"
-                 Margin="10,30,10,30" x:Name="QuestionText"/>
+                 Margin="10,20,10,20" x:Name="QuestionText"/>
 
         <ScrollViewer VerticalScrollBarVisibility="Auto"
                       Grid.Row="2" Grid.Column="2">
             <StackPanel x:Name="Panel"/>
         </ScrollViewer>
         <StackPanel Grid.Row="2" Grid.Column="1">
-            <TextBox x:Name="TxtPath" Width="120" Margin="5"/>
+            <TextBox x:Name="TxtPath" Width="100" Margin="5"/>
             <Button Content="Choose Image" x:Name="ButtonChooseImage"
                     Click="ButtonChooseImage_Click"
-                    Width="100" Margin="5"/>
-            <Image x:Name="Image" Width="120" Margin="5"/>
+                    Style="{StaticResource SecondaryButton}"
+                    Width="100"/>
+            <Image x:Name="Image" Width="100" Margin="5"/>
         </StackPanel>
 
         <Button Grid.Row="3" Grid.Column="2" Content="Cancel" 

@@ -57,9 +57,9 @@ namespace QuizMakerUI
             BLLQuiz bLLQuiz = new BLLQuiz();
             QuizModel quiz1 = bLLQuiz.GetQuizByQuizID(quiz.QuizID.Value);
 
-            MessageBoxResult result = MessageBox.Show($"Are you sure you want to delete the quiz '{quiz.Title}'?", "Confirm Deletion", MessageBoxButton.YesNo, MessageBoxImage.Warning);
-
-            if (result == MessageBoxResult.Yes)
+            CustomMessageBox customMessageBox = new CustomMessageBox($"Are you sure you want to delete the quiz '{quiz.Title}'?", "Confirm Deletion", CustomMessageBox.MessageBoxType.YesNo);
+            customMessageBox.ShowDialog();
+            if (customMessageBox.Result)
             {
                 bLLQuiz.DeleteQuiz(quiz1);
                 // Refresh the quiz list after deletion
