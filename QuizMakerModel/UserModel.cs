@@ -12,5 +12,7 @@ namespace QuizMakerModel
         public string Password { get; set; }
 
         public int UserID { get; set; }
+
+        public string? Role { get; set; }
     }
 }

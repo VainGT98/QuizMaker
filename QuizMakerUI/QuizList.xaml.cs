@@ -36,8 +36,14 @@ namespace QuizMakerUI
             dataGrid.ItemsSource = bLLQuiz.GetQuizzesByUserID(userID);
 
             AddNewQuiz.Tag = user;
-        }
 
+            int roleID = bLLUser.GetRoleIDByUserID(userID);
+
+            if (roleID == 1) // Assuming 1 is the Admin role ID
+            {
+                AdminInterfaceButton.Visibility = Visibility.Visible;
+            }
+        }
         private void Button_Update(object sender, RoutedEventArgs e)
         {
             var button = sender as Button;
@@ -84,6 +90,11 @@ namespace QuizMakerUI
             BLLQuiz bLLQuiz = new BLLQuiz();
             QuizModel quiz1 = bLLQuiz.GetQuizByQuizID(quiz.QuizID.Value);
             NavigationService.Navigate(new QuizDetails(quiz1, _user));
+        }
+
+        private void AdminInterfaceButton_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new AdminInterface());
         }
     }
 }

@@ -3,44 +3,42 @@
   "WorkspaceRootPath": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerUI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{565E89F2-74B9-45E6-996B-5F7C39FE523E}|QuizMakerUI.csproj|c:\\users\\utente\\desktop\\quizmaker\\quizmakerui\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{565E89F2-74B9-45E6-996B-5F7C39FE523E}|QuizMakerUI.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{565E89F2-74B9-45E6-996B-5F7C39FE523E}|QuizMakerUI.csproj|c:\\users\\utente\\desktop\\quizmaker\\quizmakerui\\addquestion.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{565E89F2-74B9-45E6-996B-5F7C39FE523E}|QuizMakerUI.csproj|solutionrelative:addquestion.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{565E89F2-74B9-45E6-996B-5F7C39FE523E}|QuizMakerUI.csproj|c:\\users\\utente\\desktop\\quizmaker\\quizmakerui\\createquestion.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{565E89F2-74B9-45E6-996B-5F7C39FE523E}|QuizMakerUI.csproj|solutionrelative:createquestion.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{565E89F2-74B9-45E6-996B-5F7C39FE523E}|QuizMakerUI.csproj|c:\\users\\utente\\desktop\\quizmaker\\quizmakerui\\createquiz.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{565E89F2-74B9-45E6-996B-5F7C39FE523E}|QuizMakerUI.csproj|solutionrelative:createquiz.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{565E89F2-74B9-45E6-996B-5F7C39FE523E}|QuizMakerUI.csproj|c:\\users\\utente\\desktop\\quizmaker\\quizmakerui\\quizdetails.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{565E89F2-74B9-45E6-996B-5F7C39FE523E}|QuizMakerUI.csproj|solutionrelative:quizdetails.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{565E89F2-74B9-45E6-996B-5F7C39FE523E}|QuizMakerUI.csproj|c:\\users\\utente\\desktop\\quizmaker\\quizmakerui\\admininterface.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{565E89F2-74B9-45E6-996B-5F7C39FE523E}|QuizMakerUI.csproj|solutionrelative:admininterface.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{565E89F2-74B9-45E6-996B-5F7C39FE523E}|QuizMakerUI.csproj|c:\\users\\utente\\desktop\\quizmaker\\quizmakerui\\quizlist.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{565E89F2-74B9-45E6-996B-5F7C39FE523E}|QuizMakerUI.csproj|solutionrelative:quizlist.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{565E89F2-74B9-45E6-996B-5F7C39FE523E}|QuizMakerUI.csproj|c:\\users\\utente\\desktop\\quizmaker\\quizmakerui\\register.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{565E89F2-74B9-45E6-996B-5F7C39FE523E}|QuizMakerUI.csproj|solutionrelative:register.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{565E89F2-74B9-45E6-996B-5F7C39FE523E}|QuizMakerUI.csproj|c:\\users\\utente\\desktop\\quizmaker\\quizmakerui\\admininterface.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{565E89F2-74B9-45E6-996B-5F7C39FE523E}|QuizMakerUI.csproj|solutionrelative:admininterface.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{565E89F2-74B9-45E6-996B-5F7C39FE523E}|QuizMakerUI.csproj|c:\\users\\utente\\desktop\\quizmaker\\quizmakerui\\updatequestion.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{565E89F2-74B9-45E6-996B-5F7C39FE523E}|QuizMakerUI.csproj|solutionrelative:updatequestion.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C18B969E-6F98-4B41-A3D8-EC884E59802B}|..\\QuizMakerBLL\\QuizMakerBLL.csproj|c:\\users\\utente\\desktop\\quizmaker\\quizmakerbll\\bllrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{565E89F2-74B9-45E6-996B-5F7C39FE523E}|QuizMakerUI.csproj|c:\\users\\utente\\desktop\\quizmaker\\quizmakerui\\updatequiz.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{565E89F2-74B9-45E6-996B-5F7C39FE523E}|QuizMakerUI.csproj|solutionrelative:updatequiz.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9CCC07DE-B53F-4A1A-8D65-B77CD2ACD56E}|..\\QuizMakerDAL\\QuizMakerDAL.csproj|c:\\users\\utente\\desktop\\quizmaker\\quizmakerdal\\dalrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{565E89F2-74B9-45E6-996B-5F7C39FE523E}|QuizMakerUI.csproj|c:\\users\\utente\\desktop\\quizmaker\\quizmakerui\\quizlist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{565E89F2-74B9-45E6-996B-5F7C39FE523E}|QuizMakerUI.csproj|solutionrelative:quizlist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CCC07DE-B53F-4A1A-8D65-B77CD2ACD56E}|..\\QuizMakerDAL\\QuizMakerDAL.csproj|c:\\users\\utente\\desktop\\quizmaker\\quizmakerdal\\daluser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C18B969E-6F98-4B41-A3D8-EC884E59802B}|..\\QuizMakerBLL\\QuizMakerBLL.csproj|c:\\users\\utente\\desktop\\quizmaker\\quizmakerbll\\blluser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E12F112A-C639-4F58-B826-421B782217B6}|..\\QuizMakerModel\\QuizMakerModel.csproj|c:\\users\\utente\\desktop\\quizmaker\\quizmakermodel\\rolesmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{565E89F2-74B9-45E6-996B-5F7C39FE523E}|QuizMakerUI.csproj|c:\\users\\utente\\desktop\\quizmaker\\quizmakerui\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{565E89F2-74B9-45E6-996B-5F7C39FE523E}|QuizMakerUI.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E12F112A-C639-4F58-B826-421B782217B6}|..\\QuizMakerModel\\QuizMakerModel.csproj|c:\\users\\utente\\desktop\\quizmaker\\quizmakermodel\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,123 +48,134 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UpdateQuiz.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerUI\\UpdateQuiz.xaml.cs",
-              "RelativeDocumentMoniker": "UpdateQuiz.xaml.cs",
-              "ToolTip": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerUI\\UpdateQuiz.xaml.cs",
-              "RelativeToolTip": "UpdateQuiz.xaml.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAowFkAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-08T10:30:56.181Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "UpdateQuestion.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerUI\\UpdateQuestion.xaml.cs",
-              "RelativeDocumentMoniker": "UpdateQuestion.xaml.cs",
-              "ToolTip": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerUI\\UpdateQuestion.xaml.cs",
-              "RelativeToolTip": "UpdateQuestion.xaml.cs",
-              "ViewState": "AgIAAKEAAAAAAAAAAAAwwKwAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-08T10:30:54.425Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Register.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerUI\\Register.xaml.cs",
-              "RelativeDocumentMoniker": "Register.xaml.cs",
-              "ToolTip": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerUI\\Register.xaml.cs",
-              "RelativeToolTip": "Register.xaml.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAowEcAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-08T10:30:53.046Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "QuizList.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerUI\\QuizList.xaml.cs",
-              "RelativeDocumentMoniker": "QuizList.xaml.cs",
-              "ToolTip": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerUI\\QuizList.xaml.cs",
-              "RelativeToolTip": "QuizList.xaml.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAowD4AAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-08T10:30:51.684Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "QuizDetails.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerUI\\QuizDetails.xaml.cs",
-              "RelativeDocumentMoniker": "QuizDetails.xaml.cs",
-              "ToolTip": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerUI\\QuizDetails.xaml.cs",
-              "RelativeToolTip": "QuizDetails.xaml.cs",
-              "ViewState": "AgIAABIBAAAAAAAAAAAYwC8BAAAhAAAAAAAAAA==",
+              "Title": "DALRole.cs",
+              "DocumentMoniker": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerDAL\\DALRole.cs",
+              "RelativeDocumentMoniker": "..\\QuizMakerDAL\\DALRole.cs",
+              "ToolTip": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerDAL\\DALRole.cs",
+              "RelativeToolTip": "..\\QuizMakerDAL\\DALRole.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAqwGEAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-08T10:30:50.642Z",
+              "WhenOpened": "2026-05-11T09:00:23.628Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "CreateQuiz.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerUI\\CreateQuiz.xaml.cs",
-              "RelativeDocumentMoniker": "CreateQuiz.xaml.cs",
-              "ToolTip": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerUI\\CreateQuiz.xaml.cs",
-              "RelativeToolTip": "CreateQuiz.xaml.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAwwEsAAABOAAAAAAAAAA==",
+              "Title": "BLLRole.cs",
+              "DocumentMoniker": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerBLL\\BLLRole.cs",
+              "RelativeDocumentMoniker": "..\\QuizMakerBLL\\BLLRole.cs",
+              "ToolTip": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerBLL\\BLLRole.cs",
+              "RelativeToolTip": "..\\QuizMakerBLL\\BLLRole.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-08T10:30:45.962Z",
+              "WhenOpened": "2026-05-11T09:00:03.338Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CreateQuestion.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerUI\\CreateQuestion.xaml.cs",
-              "RelativeDocumentMoniker": "CreateQuestion.xaml.cs",
-              "ToolTip": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerUI\\CreateQuestion.xaml.cs",
-              "RelativeToolTip": "CreateQuestion.xaml.cs",
-              "ViewState": "AgIAANcAAAAAAAAAAAAwwO0AAAAYAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "DALUser.cs",
+              "DocumentMoniker": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerDAL\\DALUser.cs",
+              "RelativeDocumentMoniker": "..\\QuizMakerDAL\\DALUser.cs",
+              "ToolTip": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerDAL\\DALUser.cs",
+              "RelativeToolTip": "..\\QuizMakerDAL\\DALUser.cs",
+              "ViewState": "AgIAAKgAAAAAAAAAAAAqwMMAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-08T10:30:44.736Z",
+              "WhenOpened": "2026-05-11T08:47:03.598Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BLLUser.cs",
+              "DocumentMoniker": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerBLL\\BLLUser.cs",
+              "RelativeDocumentMoniker": "..\\QuizMakerBLL\\BLLUser.cs",
+              "ToolTip": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerBLL\\BLLUser.cs",
+              "RelativeToolTip": "..\\QuizMakerBLL\\BLLUser.cs",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAowIMAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T08:47:02.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RolesModel.cs",
+              "DocumentMoniker": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerModel\\RolesModel.cs",
+              "RelativeDocumentMoniker": "..\\QuizMakerModel\\RolesModel.cs",
+              "ToolTip": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerModel\\RolesModel.cs",
+              "RelativeToolTip": "..\\QuizMakerModel\\RolesModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T08:45:09.695Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserModel.cs",
+              "DocumentMoniker": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerModel\\UserModel.cs",
+              "RelativeDocumentMoniker": "..\\QuizMakerModel\\UserModel.cs",
+              "ToolTip": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerModel\\UserModel.cs",
+              "RelativeToolTip": "..\\QuizMakerModel\\UserModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T08:44:20.509Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AddQuestion.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerUI\\AddQuestion.xaml.cs",
-              "RelativeDocumentMoniker": "AddQuestion.xaml.cs",
-              "ToolTip": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerUI\\AddQuestion.xaml.cs",
-              "RelativeToolTip": "AddQuestion.xaml.cs",
-              "ViewState": "AgIAAIAAAAAAAAAAAAAwwJ4AAAAlAAAAAAAAAA==",
+              "Title": "QuizList.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerUI\\QuizList.xaml.cs",
+              "RelativeDocumentMoniker": "QuizList.xaml.cs",
+              "ToolTip": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerUI\\QuizList.xaml.cs",
+              "RelativeToolTip": "QuizList.xaml.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAwwGAAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-08T10:30:41.185Z",
+              "WhenOpened": "2026-05-11T08:40:39.916Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerUI\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerUI\\MainWindow.xaml.cs",
-              "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAAF0AAAAAAAAAAAA4wHsAAAAlAAAAAAAAAA==",
+              "Title": "AdminInterface.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerUI\\AdminInterface.xaml.cs",
+              "RelativeDocumentMoniker": "AdminInterface.xaml.cs",
+              "ToolTip": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerUI\\AdminInterface.xaml.cs",
+              "RelativeToolTip": "AdminInterface.xaml.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAwDMAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-08T10:10:09.975Z",
+              "WhenOpened": "2026-05-11T08:35:37.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "QuizList.xaml",
+              "DocumentMoniker": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerUI\\QuizList.xaml",
+              "RelativeDocumentMoniker": "QuizList.xaml",
+              "ToolTip": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerUI\\QuizList.xaml",
+              "RelativeToolTip": "QuizList.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-11T08:20:09.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AdminInterface.xaml",
+              "DocumentMoniker": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerUI\\AdminInterface.xaml",
+              "RelativeDocumentMoniker": "AdminInterface.xaml",
+              "ToolTip": "C:\\Users\\Utente\\Desktop\\QuizMaker\\QuizMakerUI\\AdminInterface.xaml",
+              "RelativeToolTip": "AdminInterface.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-11T08:19:57.3Z",
               "EditorCaption": ""
             },
             {

@@ -147,5 +147,53 @@ namespace QuizMakerDAL
                 throw;
             }
         }
+
+        public int GetRoleIDByUserID(int userID)
+        {
+            try
+            {
+                int roleID;
+                using (SqlConn)
+                {
+                    using var cmd = new SqlCommand(
+                    "SELECT RoleId FROM UsersRoles WHERE UserId=@userID",
+                    SqlConn);
+                    cmd.Parameters.AddWithValue("@userID", userID);
+                    roleID = (int)cmd.ExecuteScalar();
+                }
+                return roleID;
+            }
+            catch
+            {
+                throw;
+            }
+        }
+
+        public List<UserModel> GetAllUsers()
+        {
+            List<UserModel> users = new List<UserModel>();
+            try
+            {
+                using (SqlConn)
+                {
+                    using var cmd = new SqlCommand("SELECT ID, Username FROM [User]", SqlConn);
+                    using var reader = cmd.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        UserModel user = new UserModel
+                        {
+                            UserID = reader.GetInt32(0),
+                            Username = reader.GetString(1)
+                        };
+                        users.Add(user);
+                    }
+                    return users;
+                }
+            }
+            catch
+            {
+                throw;
+            }
+        }
     }
 }

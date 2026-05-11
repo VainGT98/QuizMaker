@@ -62,7 +62,7 @@ namespace QuizMakerBLL
             SqlTransaction transaction = SqlConn.BeginTransaction();
 
             try
-            {   
+            {
                 List<QuizModel> quizzes = new BLLQuiz().GetQuizzesByUserID(userID, SqlConn, transaction);
                 foreach (QuizModel quiz in quizzes)
                 {
@@ -100,6 +100,32 @@ namespace QuizMakerBLL
             {
                 DALUser dalUser = new DALUser();
                 dalUser.DeleteUserRoles(userID);
+            }
+            catch
+            {
+                throw;
+            }
+        }
+
+        public int GetRoleIDByUserID(int userID)
+        {
+            try
+            {
+                DALUser dalUser = new DALUser();
+                return dalUser.GetRoleIDByUserID(userID);
+            }
+            catch
+            {
+                throw;
+            }
+        }
+
+        public List<UserModel> GetAllUsers()
+        {
+            try
+            {
+                DALUser dalUser = new DALUser();
+                return dalUser.GetAllUsers();
             }
             catch
             {

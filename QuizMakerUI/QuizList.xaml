@@ -114,5 +114,11 @@
                 Click="Button_AddNewQuiz"
                 x:Name="AddNewQuiz"
                 Style="{StaticResource PrimaryButton}"/>
-      </Grid>
+        <Button Content="ADMIN INTERFACE" Grid.Row="2" FontSize="16"
+                Padding="10" HorizontalAlignment="Left" VerticalAlignment="Center"
+                Margin="10" x:Name="AdminInterfaceButton"
+                Click="AdminInterfaceButton_Click"
+                Style="{StaticResource SecondaryButton}"
+                Visibility="Collapsed"/>
+    </Grid>
 </Page>
